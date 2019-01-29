@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="${packageName}">
+
+    <!-- Required to act as a custom watch face. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <!-- Required for complications to receive complication data and open the provider chooser. -->
+    <uses-permission android:name="com.google.android.wearable.permission.RECEIVE_COMPLICATION_DATA"/>
+
+    <application>
+        <meta-data
+                android:name="com.google.android.gms.car.application"
+                android:resource="@xml/automotive_app_desc"/>
+
+        <service android:name="shetty.people.slabstech.com.shetty.MyMessagingService">
+        </service>
+
+        <receiver android:name="shetty.people.slabstech.com.shetty.MessageReadReceiver">
+            <intent-filter>
+                <action android:name="shetty.people.slabstech.com.shetty.ACTION_MESSAGE_READ"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="shetty.people.slabstech.com.shetty.MessageReplyReceiver">
+            <intent-filter>
+                <action android:name="shetty.people.slabstech.com.shetty.ACTION_MESSAGE_REPLY"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
