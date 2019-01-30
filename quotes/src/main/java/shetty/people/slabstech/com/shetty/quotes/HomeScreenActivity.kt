@@ -8,6 +8,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_home_screen.*
 import kotlinx.android.synthetic.main.app_bar_home_screen.*
 
@@ -17,11 +18,6 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
         setSupportActionBar(toolbar)
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
 
         val toggle = ActionBarDrawerToggle(
             this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
@@ -58,23 +54,46 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
+
+        val duration = Toast.LENGTH_SHORT
+
+
         when (item.itemId) {
-            R.id.nav_camera -> {
+            R.id.nav_quotes -> {
                 // Handle the camera action
-            }
-            R.id.nav_gallery -> {
+                val text = "quotes"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
 
             }
-            R.id.nav_slideshow -> {
+            R.id.nav_missionmars -> {
+                val text = "missionmars"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
 
             }
-            R.id.nav_manage -> {
+            R.id.nav_books -> {
+                val text = "books"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
+
+            }
+            R.id.nav_mbga -> {
+                val text = "mbga"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
 
             }
             R.id.nav_share -> {
+                val text = "share"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
 
             }
             R.id.nav_send -> {
+                val text = "send"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
 
             }
         }
