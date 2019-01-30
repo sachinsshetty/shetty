@@ -6,7 +6,7 @@ android {
 
 
     defaultConfig {
-        applicationId "shetty.people.slabstech.com.shetty.app"
+        applicationId "com.slabstech.people.shetty"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
