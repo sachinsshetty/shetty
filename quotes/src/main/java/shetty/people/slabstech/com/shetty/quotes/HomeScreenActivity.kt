@@ -8,6 +8,9 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_home_screen.*
 import kotlinx.android.synthetic.main.app_bar_home_screen.*
@@ -26,6 +29,22 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        val mWebView = findViewById(R.id.mWebview) as WebView
+
+
+        val assetManager = assets
+        val files = assetManager.list("")
+
+        //mWebView.loadUrl("file:///book.html")
+        mWebView.getSettings().setJavaScriptEnabled(true)
+        mWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY)
+        //mWebView.getSettings().setSaveFormData(true)
+        mWebView.getSettings().setBuiltInZoomControls(true)
+       // mWebView.setWebViewClient(MyWebViewClient())
+        mWebView.loadUrl("quotes/2019/oath.md")
+
+
     }
 
     override fun onBackPressed() {
@@ -99,6 +118,14 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)
+        return true
+    }
+}
+
+class MyWebViewClient : WebViewClient() {
+    //show the web page in webview but not in web browser
+    override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+        view.loadUrl(url)
         return true
     }
 }
