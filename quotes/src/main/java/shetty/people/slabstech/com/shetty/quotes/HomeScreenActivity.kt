@@ -30,21 +30,6 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
         nav_view.setNavigationItemSelectedListener(this)
 
-        val mWebView = findViewById(R.id.mWebview) as WebView
-
-
-        val assetManager = assets
-        val files = assetManager.list("")
-
-        //mWebView.loadUrl("file:///book.html")
-        mWebView.getSettings().setJavaScriptEnabled(true)
-        mWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY)
-        //mWebView.getSettings().setSaveFormData(true)
-        mWebView.getSettings().setBuiltInZoomControls(true)
-       // mWebView.setWebViewClient(MyWebViewClient())
-        mWebView.loadUrl("quotes/2019/oath.md")
-
-
     }
 
     override fun onBackPressed() {

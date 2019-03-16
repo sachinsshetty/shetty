@@ -6,16 +6,16 @@
     <group android:checkableBehavior="single">
         <item
                 android:id="@+id/nav_quotes"
-                android:title="Quotes"/>
+                android:title="The Experiences"/>
         <item
                 android:id="@+id/nav_missionmars"
-                android:title="Mission Mars"/>
+                android:title="Community Partners"/>
         <item
                 android:id="@+id/nav_books"
                 android:title="Books"/>
         <item
                 android:id="@+id/nav_mbga"
-                android:title="MBGA"/>
+                android:title="Tips"/>
     </group>
 
     <item android:title="Communicate">
