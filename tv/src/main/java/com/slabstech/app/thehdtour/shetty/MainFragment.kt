@@ -12,7 +12,7 @@
  * the License.
  */
 
-package shetty.people.slabstech.com.shetty
+package com.slabstech.app.thehdtour
 
 import java.util.Collections
 import java.util.Timer

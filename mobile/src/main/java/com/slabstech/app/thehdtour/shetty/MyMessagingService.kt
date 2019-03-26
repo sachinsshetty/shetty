@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package shetty.people.slabstech.com.shetty
+package com.slabstech.app.thehdtour
 
 import android.app.PendingIntent
 import android.app.Service

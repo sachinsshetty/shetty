@@ -12,7 +12,7 @@
  * the License.
  */
 
-package shetty.people.slabstech.com.shetty
+package com.slabstech.app.thehdtour
 
 import android.graphics.drawable.Drawable
 import android.support.v17.leanback.widget.ImageCardView

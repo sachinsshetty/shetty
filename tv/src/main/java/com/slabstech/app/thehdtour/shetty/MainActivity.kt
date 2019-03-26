@@ -12,7 +12,7 @@
  * the License.
  */
 
-package shetty.people.slabstech.com.shetty
+package com.slabstech.app.thehdtour
 
 import android.app.Activity
 import android.os.Bundle

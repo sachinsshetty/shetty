@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.slabstech.app.thehdtourquotes;
+package com.slabstech.app.thehdtour.quotes;
 
 
 import android.app.Activity;
