@@ -13,17 +13,17 @@
                 android:name="com.google.android.gms.car.application"
                 android:resource="@xml/automotive_app_desc"/>
 
-        <service android:name="shetty.people.slabstech.com.shetty.MyMessagingService">
+        <service android:name="com.slabstech.app.thehdtour.MyMessagingService">
         </service>
 
-        <receiver android:name="shetty.people.slabstech.com.shetty.MessageReadReceiver">
+        <receiver android:name="com.slabstech.app.thehdtour.MessageReadReceiver">
             <intent-filter>
-                <action android:name="shetty.people.slabstech.com.shetty.ACTION_MESSAGE_READ"/>
+                <action android:name="com.slabstech.app.thehdtour.ACTION_MESSAGE_READ"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="shetty.people.slabstech.com.shetty.MessageReplyReceiver">
+        <receiver android:name="com.slabstech.app.thehdtour.MessageReplyReceiver">
             <intent-filter>
-                <action android:name="shetty.people.slabstech.com.shetty.ACTION_MESSAGE_REPLY"/>
+                <action android:name="com.slabstech.app.thehdtour.ACTION_MESSAGE_REPLY"/>
             </intent-filter>
         </receiver>
     </application>

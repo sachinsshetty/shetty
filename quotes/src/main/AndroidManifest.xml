@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="shetty.people.slabstech.com.shetty.quotes">
+          package="com.slabstech.app.thehdtour.quotes">
 
     <application>
         <activity
-                android:name="shetty.people.slabstech.com.shetty.quotes.HomePage"
+                android:name="com.slabstech.app.thehdtour.quotes.HomePage"
                 android:label="@string/app_name"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -13,51 +13,51 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="Places" android:name="shetty.people.slabstech.com.shetty.quotes.Places" />
+        <activity android:label="Places" android:name="com.slabstech.app.thehdtour.quotes.Places" />
 
 
-        <activity android:label="AudioPage" android:name="shetty.people.slabstech.com.shetty.quotes.AudioPage" />
+        <activity android:label="AudioPage" android:name="com.slabstech.app.thehdtour.quotes.AudioPage" />
 
-        <activity  android:name="shetty.people.slabstech.com.shetty.quotes.About"  android:label="About"
+        <activity  android:name="com.slabstech.app.thehdtour.quotes.About"  android:label="About"
         />
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.VSlate"/>
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Narration"/>
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Slate"
+        <activity android:name="com.slabstech.app.thehdtour.quotes.VSlate"/>
+        <activity android:name="com.slabstech.app.thehdtour.quotes.Narration"/>
+        <activity android:name="com.slabstech.app.thehdtour.quotes.Slate"
                   android:label="@string/app_name" />
 
 
-        <!--activity android:name="shetty.people.slabstech.com.shetty.quotes.VirtualSlate"  android:theme="@android:style/Theme" /-->
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.StoryWeb" />
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Pronounciator"/>
+        <!--activity android:name="com.slabstech.app.thehdtour.quotes.VirtualSlate"  android:theme="@android:style/Theme" /-->
+        <activity android:name="com.slabstech.app.thehdtour.quotes.StoryWeb" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.Pronounciator"/>
 
 
 
-        <!--activity android:name="shetty.people.slabstech.com.shetty.quotes.EastWeb" /-->
+        <!--activity android:name="com.slabstech.app.thehdtour.quotes.EastWeb" /-->
 
-        <!--activity android:name="shetty.people.slabstech.com.shetty.quotes.WestWeb" /-->
+        <!--activity android:name="com.slabstech.app.thehdtour.quotes.WestWeb" /-->
 
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.WebConnect" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.WebConnect" />
 
-        <!--activity android:name="shetty.people.slabstech.com.shetty.quotes.SouthWeb" /-->
+        <!--activity android:name="com.slabstech.app.thehdtour.quotes.SouthWeb" /-->
 
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.WebPlaces" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.WebPlaces" />
 
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Info" />
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.NotificationReciever" />
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.ScheduleQuote" />
-
-
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Narrator" />
-
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.South" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.Info" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.NotificationReciever" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.ScheduleQuote" />
 
 
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.West" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.Narrator" />
 
-        <activity android:name="shetty.people.slabstech.com.shetty.quotes.East" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.South" />
 
 
-        <receiver android:name="shetty.people.slabstech.com.shetty.quotes.NotificationReciever"/>
+        <activity android:name="com.slabstech.app.thehdtour.quotes.West" />
+
+        <activity android:name="com.slabstech.app.thehdtour.quotes.East" />
+
+
+        <receiver android:name="com.slabstech.app.thehdtour.quotes.NotificationReciever"/>
 
     </application>
 

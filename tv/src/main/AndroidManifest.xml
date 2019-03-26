@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="shetty.people.slabstech.com.shetty">
+          package="com.slabstech.app.thehdtour">
 
     <uses-feature
             android:name="android.hardware.touchscreen"
