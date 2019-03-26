@@ -1,4 +1,4 @@
-package shetty.people.slabstech.com.shetty.quotes
+package com.slabstech.app.thehdtourquotes
 
 import org.junit.Test
 

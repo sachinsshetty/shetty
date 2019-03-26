@@ -1,4 +1,4 @@
-package shetty.people.slabstech.com.shetty.quotes
+package com.slabstech.app.thehdtour.quotes
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("shetty.people.slabstech.com.shetty.quotes.test", appContext.packageName)
+        assertEquals("com.slabstech.app.thehdtour.quotes.test", appContext.packageName)
     }
 }
