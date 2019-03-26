@@ -49,7 +49,7 @@ public class HomePage extends Activity implements OnClickListener {
 
 		bSchedule.setOnClickListener(this);
 		
-		
+		/*
 		InputStream inputStream = null;
 	
 		try {
@@ -81,7 +81,7 @@ public class HomePage extends Activity implements OnClickListener {
 				}
 		    	
 		} 
-		
+		*/
 		
 		
 		

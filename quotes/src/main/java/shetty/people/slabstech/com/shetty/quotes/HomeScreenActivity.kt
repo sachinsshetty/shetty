@@ -1,5 +1,6 @@
 package shetty.people.slabstech.com.shetty.quotes
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -69,6 +70,13 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
 
+            /*    Intent myintent1 = new Intent();
+
+                //Notification code added heres
+                myintent1.setClass(getApplicationContext(), Places.class)
+                startActivity(myintent1)
+
+*/
             }
             R.id.nav_missionmars -> {
                 val text = "missionmars"
