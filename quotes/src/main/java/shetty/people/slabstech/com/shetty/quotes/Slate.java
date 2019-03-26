@@ -1,4 +1,4 @@
-package com.proj.quoteforaday;
+package shetty.people.slabstech.com.shetty.quotes;
 import java.io.File;
 import java.util.Calendar;
 
@@ -64,7 +64,8 @@ public class Slate extends Activity {
 		
         mContent = (LinearLayout) findViewById(R.id.linearLayout);
         mSlate = new slate(this, null);
-       
+
+        /*
         if (param1.equals("a")) {
         	 mSlate.setBackgroundResource(R.drawable.a);
              
@@ -115,9 +116,12 @@ public class Slate extends Activity {
              
 		}else if (param1.equals("a9")) {
         	 mSlate.setBackgroundResource(R.drawable.a9);
-             
+
 		}
-        
+
+        */
+        mSlate.setBackgroundResource(R.drawable.a0);
+
         mContent.addView(mSlate, LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT);
         mClear = (Button)findViewById(R.id.clear);
         mGetSign = (Button)findViewById(R.id.getsign);

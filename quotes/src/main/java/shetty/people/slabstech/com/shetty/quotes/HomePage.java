@@ -164,8 +164,13 @@ public class HomePage extends Activity implements OnClickListener {
 	    }
 	
 	@Override
-	public void onClick(View v) {
-		
+	public void onClick(View v)
+	{
+
+	}
+	/*
+	{
+
 	
 		switch (v.getId()) {
 		case R.id.start:
@@ -192,7 +197,9 @@ public class HomePage extends Activity implements OnClickListener {
 			break;
 
 		case R.id.schedule:
-		{/*
+		{
+
+
 			AlertDialog.Builder builder=new AlertDialog.Builder(HomePage.this);
 			builder.setMessage(" Are you sure you want to exit ?");
 			builder.setCancelable(false);
@@ -218,9 +225,10 @@ public class HomePage extends Activity implements OnClickListener {
 			
 			
 			AlertDialog alert=builder.create();
-			alert.show();*/
-			
-		
+			alert.show();
+
+
+
 			Intent myintent3 = new Intent();
 			myintent3.setClass(getApplicationContext(), About.class);
 			startActivity(myintent3);
@@ -232,4 +240,5 @@ public class HomePage extends Activity implements OnClickListener {
 		}
 
 	}
+	*/
 }

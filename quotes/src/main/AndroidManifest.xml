@@ -13,6 +13,58 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:label="Places" android:name="shetty.people.slabstech.com.shetty.quotes.Places" />
+
+
+        <activity android:label="AudioPage" android:name="shetty.people.slabstech.com.shetty.quotes.AudioPage" />
+
+        <activity  android:name="shetty.people.slabstech.com.shetty.quotes.About"  android:label="About"
+        />
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.VSlate"/>
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Narration"/>
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Slate"
+                  android:label="@string/app_name" />
+
+
+        <!--activity android:name="shetty.people.slabstech.com.shetty.quotes.VirtualSlate"  android:theme="@android:style/Theme" /-->
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.StoryWeb" />
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Pronounciator"/>
+
+
+
+        <!--activity android:name="shetty.people.slabstech.com.shetty.quotes.EastWeb" /-->
+
+        <!--activity android:name="shetty.people.slabstech.com.shetty.quotes.WestWeb" /-->
+
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.WebConnect" />
+
+        <!--activity android:name="shetty.people.slabstech.com.shetty.quotes.SouthWeb" /-->
+
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.WebPlaces" />
+
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Info" />
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.NotificationReciever" />
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.ScheduleQuote" />
+
+
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.Narrator" />
+
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.South" />
+
+
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.West" />
+
+        <activity android:name="shetty.people.slabstech.com.shetty.quotes.East" />
+
+
+        <receiver android:name="shetty.people.slabstech.com.shetty.quotes.NotificationReciever"/>
+
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+
 
 </manifest>

@@ -18,11 +18,14 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 
 public class VSlate extends Activity {
-	Integer[] pics = { R.drawable.a, R.drawable.b, R.drawable.c,
+	Integer[] pics = { R.drawable.a0
+
+	/*		R.drawable.a, R.drawable.b, R.drawable.c,
 			R.drawable.d, R.drawable.e, R.drawable.f,
 			R.drawable.g, R.drawable.h, R.drawable.a0,
 			 R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a4,
 			 R.drawable.a5, R.drawable.a6, R.drawable.a7, R.drawable.a8, R.drawable.a9,
+	*/
 	};
 	ImageView imageView;
 

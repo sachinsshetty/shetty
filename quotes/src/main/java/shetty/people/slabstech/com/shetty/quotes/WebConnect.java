@@ -184,6 +184,8 @@ public class WebConnect extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
+
+		/*
 		switch (v.getId()) {
 		case R.id.webser:
 		{
@@ -223,6 +225,7 @@ public class WebConnect extends Activity implements OnClickListener {
 			
 			break;
 		}
+		*/
 	}
 	
 
