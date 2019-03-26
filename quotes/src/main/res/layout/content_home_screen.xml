@@ -9,10 +9,11 @@
         tools:showIn="@layout/app_bar_home_screen"
         tools:context=".HomeScreenActivity">
 
-    <WebView
-            android:id="@+id/mWebview"
-            android:layout_width="395dp"
-            android:layout_height="312dp" tools:layout_editor_absoluteX="8dp" app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="8dp"/>
 
+    <ScrollView
+            android:layout_width="395dp"
+            android:layout_height="659dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"/>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
