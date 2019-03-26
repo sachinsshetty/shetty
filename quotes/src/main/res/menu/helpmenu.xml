@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/help_lang" android:title="Change language"></item>
+<item android:id="@+id/help_speed" android:title="Change speed"></item>
+   
+</menu>
