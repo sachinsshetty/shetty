@@ -14,9 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-
-
-public class Narration extends Activity {
+public class Partner extends Activity {
 	private ListView mList;
 
     @Override
@@ -26,19 +24,20 @@ public class Narration extends Activity {
         mList = (ListView) findViewById(R.id.list);
 
 		android.content.res.Resources res = getResources();
-		String[] experiences = res.getStringArray(R.array.experienceList);
+		String[] partners = res.getStringArray(R.array.partnerList);
 
 		mList.setAdapter(new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, experiences));
+				android.R.layout.simple_list_item_1, partners));
 
+		
 		mList.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 
+
 				Bundle bundle1 = new Bundle();
 				String saveVal="no";
 				bundle1.putString("saved", saveVal);
-
 				bundle1.putInt("param1", position);
 
 				Intent myintent = new Intent();

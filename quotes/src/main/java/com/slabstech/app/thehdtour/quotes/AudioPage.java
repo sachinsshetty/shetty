@@ -61,110 +61,31 @@ String saved="";
 		Tts = new TextToSpeech(this, this // TextToSpeech.OnInitListener
 		);
 		Bundle bundle = this.getIntent().getExtras();
-		String param1 = bundle.getString("param1");
-		
-		cityName=param1;
+
+		int param1 = bundle.getInt("param1");
+
+		//cityName=param1;
 		
 		saved=bundle.getString("saved");
 		setContentView(R.layout.audiopage);
-		txt = (String) param1;
+
+
 		TextView tx = (TextView) findViewById(R.id.title);
 
 
-		switch(param1)
-        {
+		android.content.res.Resources res = getResources();
 
-            case ("one"): {
-            story = 1;
-            tx.setText(R.string.exp_rani_chennamma);
-            break ;
-            }
+		String[] experiences = res.getStringArray(R.array.experienceList);
 
-            case ("two"): {
-                story = 2;
-                tx.setText(R.string.exp_rock_garden);
-                break ;
-            }
+		txt = experiences[param1];
 
-            case ("three"): {
-                story = 3;
-                tx.setText(R.string.exp_unkal_lake);
-
-                break ;
-            }
-
-            case ("four"): {
-                tx.setText(R.string.exp_sidharudha_matha);
-
-                story = 4;
-                break ;
-            }
-
-            case ("five"): {
-
-                tx.setText(R.string.exp_nrupatunga_betta);
-                story = 5;
-                break ;
-            }
-
-            case ("six"): {
-
-                story = 6;
+		tx.setText(experiences[param1]);
 
 
-                tx.setText(R.string.exp_gangubhai_hangal);
-                break ;
-            }
-
-            case ("seven"): {
-
-                story = 7;
-
-                tx.setText(R.string.exp_kltech_water_fountain);
-                break ;
-            }
-
-
-
-            case ("eight"): {
-
-                story = 8;
-
-                tx.setText(R.string.exp_durgadbail_mystery);
-                break ;
-            }
-
-
-            case ("nine"): {
-
-                story = 9;
-
-                tx.setText(R.string.exp_chandramouleshwara);
-                break ;
-            }
-
-
-            case ("ten"): {
-
-                story = 10;
-
-                tx.setText(R.string.exp_iskcon_akshay_patra);
-                break ;
-            }
-
-            default:
-
-                story = 100;
-                tx.setText(param1);
-        }
-
-
-
-
-        Button b1 = (Button) findViewById(R.id.speak);
+		Button b1 = (Button) findViewById(R.id.speak);
 		Button b2 = (Button) findViewById(R.id.stop);
 		
-		word = param1.toString();
+		word = experiences[param1];
 		b1.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				speak1(story);
@@ -254,7 +175,7 @@ String saved="";
 
 		
 		
-	//	SetupTabs();
+		SetupTabs();
 		
 	}
 	

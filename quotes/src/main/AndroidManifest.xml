@@ -20,6 +20,7 @@
         <activity android:label="Places" android:name="com.slabstech.app.thehdtour.quotes.Places" />
         <activity android:label="AudioPage" android:name="com.slabstech.app.thehdtour.quotes.AudioPage" />
         <activity android:name="com.slabstech.app.thehdtour.quotes.Narration"/>
+        <activity android:name="com.slabstech.app.thehdtour.quotes.Partner"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebConnect" />
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebPlaces" />
     </application>

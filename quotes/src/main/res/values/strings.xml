@@ -8,8 +8,6 @@
 
     <string name="app_names">The HD Tour</string>
 
-    <string name="about_alphanum">A,B,C,D,E,F,G,H,0,1,2,3,4,5,6,7,8,9</string>
-
     <color name="green">#000cff</color>
     <color name="blue">#000fff</color>
     <color name="cyan">#000dff</color>
@@ -17,9 +15,7 @@
     <color name="yellow">#000eff</color>
     <color name="darkgray">#404040ff</color>
     <string name="about_contact">Please feel free to contact us and mail us your valuable feedback @ info@slabs.tech . </string>
-    <string name="about_design">
-        slabstech
-    </string>
+    <string name="about_design">slabstech</string>
 
     <string name="about_tour">The features provided by the system includes a story narrator which reads fables and short-stories , it also includes a pronounciation tutor- which allows the user to proceed to next word only after the correct utterance of the word. The striking feature of the app is be the virtual slate, it helps the user to learn different alphabets by tracing them on the screen.</string>
     <string name="help_help">click the menu button for information on how to change language and speed</string>
@@ -28,27 +24,25 @@
 
     <color name="gray">#808080ff</color>
 
-    <string name="exp_rani_chennamma">Kittur Rani Chennamma : The Divine Warrior Female Force</string>
+    <string-array name="experienceList">
+        <item>Kittur Rani Chennamma : The Divine Warrior Female Force</item>
+        <item>the Utsav Rock Garden : Be amazed at the magic of handcrafted rock artifacts</item>
+        <item>Serene Unkal Lake : Take joy boat ride in the calm waters of Unkal Lake</item>
+        <item>Siddharudha Matha : Meditate amidst the serene setting of Siddharudha Math</item>
+        <item>Nrupatunga Betta : Walk/Pedal With Family and connect to nature</item>
+        <item>Gangubhai Hangal Memorial : The voice that lifted countless hearts</item>
+        <item>KLETECH Night Water fountain : Where Science Meets Art aka The Prestige</item>
+        <item>Mystery of Durgadbail : Our Very Own Diagon Alley</item>
+        <item>Chandramouleshwara Temple : Time Travel to a place built 900 years ago</item>
+        <item>Akshay Patra : ISKCON : Gods at Work : Feeding millions of School Going Kids</item>
+    </string-array>
 
-    <string name="exp_rock_garden">the Utsav Rock Garden : Be amazed at the magic of handcrafted rock artifacts</string>
-
-    <string name="exp_unkal_lake">Serene Unkal Lake : Take joy boat ride in the calm waters of Unkal Lake</string>
-
-    <string name="exp_sidharudha_matha">Siddharudha Matha : Meditate amidst the serene setting of Siddharudha Math</string>
-
-    <string name="exp_nrupatunga_betta">Nrupatunga Betta : Walk/Pedal With Family and connect to nature</string>
-
-    <string name="exp_gangubhai_hangal">  Gangubhai Hangal Memorial : The voice that lifted countless hearts</string>
-
-    <string name="exp_kltech_water_fountain">KLETECH Night Water fountainWhere Science Meets Art aka The Prestige</string>
-
-    <string name="exp_durgadbail_mystery">Mystery of Durgadbail : Our Very Own Diagon Alley</string>
-
-    <string name="exp_chandramouleshwara">Chandramouleshwara Temple : Time Travel to a place built 900 years ago</string>
-
-    <string name="exp_iskcon_akshay_patra">Akshay Patra : ISKCON : Gods at Work : Feeding millions of School Going Kids
-    </string>
-
+    <string-array name="partnerList">
+        <item>Vitrag Gold : Imitation Jewellery : Imitation is the best form of Flattery</item>
+        <item>The South Chimney : Delicacies of the deccan multi-cuisine served on Banana leaves</item>
+        <item>The Silver Culture : Handcrafted silver art for the Diva in You</item>
+        <item >The Cashew Factory : Hands-on Tour of Cashew Industry : Charlie and The Chocolate Factory</item>
+    </string-array>
 
 
 </resources>
