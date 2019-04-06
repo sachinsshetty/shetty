@@ -3,6 +3,7 @@
           package="com.slabstech.app.thehdtour.quotes">
 
     <application
+            android:icon="@drawable/icon"
     >
 
 
