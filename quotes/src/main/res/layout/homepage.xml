@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/homep"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/back4">
+    android:layout_height="fill_parent">
 
     <RelativeLayout 
         android:id="@+id/home"
@@ -25,7 +24,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="E-tutor"
+                android:text="@string/app_names"
                 android:textColor="#ff00cccc"
                 android:textSize="35sp"
                 android:textStyle="bold"

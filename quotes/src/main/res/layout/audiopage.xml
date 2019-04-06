@@ -3,7 +3,7 @@
     android:id="@+id/widget31"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/back4" >
+     >
 
     <LinearLayout
         android:id="@+id/widget32"

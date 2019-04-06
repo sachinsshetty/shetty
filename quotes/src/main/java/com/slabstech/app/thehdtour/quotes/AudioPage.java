@@ -88,19 +88,69 @@ String saved="";
 
             case ("three"): {
                 story = 3;
-                tx.setText(R.string.exp_sidharudha_matha);
+                tx.setText(R.string.exp_unkal_lake);
+
                 break ;
             }
 
             case ("four"): {
+                tx.setText(R.string.exp_sidharudha_matha);
 
                 story = 4;
-                tx.setText(R.string.exp_unkal_lake);
+                break ;
+            }
+
+            case ("five"): {
+
+                tx.setText(R.string.exp_nrupatunga_betta);
+                story = 5;
+                break ;
+            }
+
+            case ("six"): {
+
+                story = 6;
+
+
+                tx.setText(R.string.exp_gangubhai_hangal);
+                break ;
+            }
+
+            case ("seven"): {
+
+                story = 7;
+
+                tx.setText(R.string.exp_kltech_water_fountain);
                 break ;
             }
 
 
 
+            case ("eight"): {
+
+                story = 8;
+
+                tx.setText(R.string.exp_durgadbail_mystery);
+                break ;
+            }
+
+
+            case ("nine"): {
+
+                story = 9;
+
+                tx.setText(R.string.exp_chandramouleshwara);
+                break ;
+            }
+
+
+            case ("ten"): {
+
+                story = 10;
+
+                tx.setText(R.string.exp_iskcon_akshay_patra);
+                break ;
+            }
 
             default:
 
@@ -108,19 +158,10 @@ String saved="";
                 tx.setText(param1);
         }
 
-		if (param1.equals("five")) {
-			story = 5;
-			tx.setText(R.string.exp_gangubhai_hangal);
-		} else if (param1.equals("six")) {
-			story = 6;
-			tx.setText(R.string.exp_kltech_water_fountain);
-		} else if (param1.equals("seven")) {
-			story = 7;
-			tx.setText(R.string.exp_chandramouleshwara);
-		}  else {
-		}
 
-		Button b1 = (Button) findViewById(R.id.speak);
+
+
+        Button b1 = (Button) findViewById(R.id.speak);
 		Button b2 = (Button) findViewById(R.id.stop);
 		
 		word = param1.toString();
@@ -133,11 +174,8 @@ String saved="";
 	
 		b2.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-
 				Tts.stop();
 				
-				
-
 			}
 		});
 
@@ -176,7 +214,7 @@ String saved="";
 
 				case 100:
 
-			try {
+		try {
 				inputStream = openFileInput("temp.txt");
 			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
@@ -218,7 +256,7 @@ String saved="";
 		
 		SetupTabs();
 		
-			}
+	}
 	
 	void SetupTabs() {
 

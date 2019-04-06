@@ -26,8 +26,17 @@ public class Narration extends Activity {
         mList = (ListView) findViewById(R.id.list);
 	//	mList.setBackgroundResource(R.color.gray);
 		
-		String item[]={"1.The Lion and the Mouse","2.The Goose with the Golden Eggs","3.The Hare and the Tortoise","4.The Fox and the Stork"
-				,"5.The Monkey and the Dolphin","6.Bundle of sticks","7.The Thirsty Crow"};
+		String item[]={getString(R.string.exp_rani_chennamma),
+				getString(R.string.exp_rock_garden),
+				getString(R.string.exp_unkal_lake),
+				getString(R.string.exp_sidharudha_matha),
+				getString(R.string.exp_nrupatunga_betta),
+				getString(R.string.exp_gangubhai_hangal),
+				getString(R.string.exp_kltech_water_fountain),
+				getString(R.string.exp_durgadbail_mystery),
+				getString(R.string.exp_chandramouleshwara),
+				getString(R.string.exp_iskcon_akshay_patra)
+				};
 		
 		mList.setAdapter(new ArrayAdapter<String>(this,
 				android.R.layout.simple_list_item_1, item));
