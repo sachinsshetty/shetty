@@ -12,6 +12,7 @@ import android.view.MenuItem
 import android.view.View
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_home_screen.*
 import kotlinx.android.synthetic.main.app_bar_home_screen.*
@@ -31,7 +32,20 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
         nav_view.setNavigationItemSelectedListener(this)
 
+
+        val bStart = findViewById(R.id.start) as Button
+
+
+        bStart.setOnClickListener {
+
+            val intent : Intent = Intent (this, Places::class.java)
+
+            startActivity(intent)
+        }
+
+
     }
+
 
     override fun onBackPressed() {
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
@@ -64,34 +78,25 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
 
         when (item.itemId) {
-            R.id.nav_quotes -> {
-                // Handle the camera action
-                val text = "quotes"
-                val toast = Toast.makeText(applicationContext, text, duration)
-                toast.show()
+            R.id.experience -> {
 
-            /*    Intent myintent1 = new Intent();
+                val intent : Intent = Intent (this, Places::class.java)
 
-                //Notification code added heres
-                myintent1.setClass(getApplicationContext(), Places.class)
-                startActivity(myintent1)
-
-*/
-            }
-            R.id.nav_missionmars -> {
-                val text = "missionmars"
-                val toast = Toast.makeText(applicationContext, text, duration)
-                toast.show()
+                startActivity(intent)
 
             }
-            R.id.nav_books -> {
-                val text = "books"
-                val toast = Toast.makeText(applicationContext, text, duration)
-                toast.show()
+            R.id.partners -> {
 
             }
-            R.id.nav_mbga -> {
-                val text = "mbga"
+            R.id.gaganyatri -> {
+
+
+                val text = "Gaganyatri"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
+            }
+            R.id.settings -> {
+                val text = "Settings"
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
 
@@ -115,10 +120,4 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
     }
 }
 
-class MyWebViewClient : WebViewClient() {
-    //show the web page in webview but not in web browser
-    override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
-        view.loadUrl(url)
-        return true
-    }
-}
+

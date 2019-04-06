@@ -12,8 +12,80 @@
 
     <ScrollView
             android:layout_width="395dp"
-            android:layout_height="659dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp">
+            android:layout_height="659dp" tools:layout_editor_absoluteX="8dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="vertical"/>
+                      android:orientation="vertical">
+
+            <TextView
+                    android:text="Namma Hubballi Dharwada"
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView3"/>
+
+
+            <TextView
+                    android:text="Delivering experiences for "
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView4"/>
+
+            <TextView
+                    android:text="a 2 day stay to witness"
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView5"/>
+
+            <TextView
+                    android:text="The beauty"
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView6"/>
+
+            <TextView
+                    android:text="The Wisdom"
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView7"/>
+
+            <TextView
+                    android:text="Of the Land of"
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView8"/>
+
+            <TextView
+                    android:text="Poets and Warriors"
+                    android:textSize="20sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
+                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView9"/>
+
+
+            <Button
+                    android:id="@+id/start"
+                    android:layout_width="75dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:text="Start"
+                    android:background="@drawable/blue"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+        </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>

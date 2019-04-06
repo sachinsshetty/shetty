@@ -69,38 +69,59 @@ String saved="";
 		setContentView(R.layout.audiopage);
 		txt = (String) param1;
 		TextView tx = (TextView) findViewById(R.id.title);
-		if (param1.equals("one")) {
-			story = 1;
-			tx.setText("The Lion and the Mouse");
 
-		} else if (param1.equals("two")) {
-			story = 2;
-			tx.setText("The Goose with the Golden Eggs");
-		} else if (param1.equals("three")) {
-			story = 3;
-			tx.setText("The Hare and the Tortoise");
-		} else if (param1.equals("four")) {
-			story = 4;
-			tx.setText("The Fox and the Stork");
-		} else if (param1.equals("five")) {
+
+		switch(param1)
+        {
+
+            case ("one"): {
+            story = 1;
+            tx.setText(R.string.exp_rani_chennamma);
+            break ;
+            }
+
+            case ("two"): {
+                story = 2;
+                tx.setText(R.string.exp_rock_garden);
+                break ;
+            }
+
+            case ("three"): {
+                story = 3;
+                tx.setText(R.string.exp_sidharudha_matha);
+                break ;
+            }
+
+            case ("four"): {
+
+                story = 4;
+                tx.setText(R.string.exp_unkal_lake);
+                break ;
+            }
+
+
+
+
+            default:
+
+                story = 100;
+                tx.setText(param1);
+        }
+
+		if (param1.equals("five")) {
 			story = 5;
-			tx.setText("The Monkey and the Dolphin");
+			tx.setText(R.string.exp_gangubhai_hangal);
 		} else if (param1.equals("six")) {
 			story = 6;
-			tx.setText("Bundle of sticks");
+			tx.setText(R.string.exp_kltech_water_fountain);
 		} else if (param1.equals("seven")) {
 			story = 7;
-			tx.setText("The Thirsty Crow");
+			tx.setText(R.string.exp_chandramouleshwara);
 		}  else {
-			story = 100;
-			tx.setText(param1);
 		}
 
 		Button b1 = (Button) findViewById(R.id.speak);
 		Button b2 = (Button) findViewById(R.id.stop);
-		
-		
-	
 		
 		word = param1.toString();
 		b1.setOnClickListener(new OnClickListener() {
@@ -119,11 +140,6 @@ String saved="";
 
 			}
 		});
-		////////////////
-
-	
-
-		// //////////////////////////
 
 		InputStream inputStream = null;
 
@@ -146,7 +162,7 @@ String saved="";
 			break;
 
 		case 5:
-		inputStream = getResources().openRawResource(R.raw.five);
+			inputStream = getResources().openRawResource(R.raw.five);
 
 			break;
 
@@ -211,11 +227,14 @@ String saved="";
 		Bundle bundle3 = new Bundle();
 
 		bundle1.putString("param1", hosp[1]);
-	bundle2.putString("param1", hotel[1]);
+
+		bundle2.putString("param1", hotel[1]);
+
 		bundle3.putString("param1",placs[1]);
 
 		TabHost host = getTabHost();
-TabHost.TabSpec spec1 = host.newTabSpec("Moral");
+
+		TabHost.TabSpec spec1 = host.newTabSpec("Moral");
 
 		
 		Intent in1 = new Intent(this, Info.class);
@@ -261,7 +280,7 @@ TabHost.TabSpec spec1 = host.newTabSpec("Moral");
 		}
 		
 		
-				SubMenu lanugageMenu = menu.addSubMenu(0, LANGUAGE_MENU, Menu.NONE,
+		SubMenu lanugageMenu = menu.addSubMenu(0, LANGUAGE_MENU, Menu.NONE,
 				"Language");
 
 		lanugageMenu.setHeaderTitle("Select Language");
