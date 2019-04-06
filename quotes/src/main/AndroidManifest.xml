@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.slabstech.app.thehdtour.quotes">
 
-    <application>
+    <application
+    >
+
+
         <activity
                 android:name=".HomeScreenActivity"
                 android:label="@string/app_name"
@@ -14,57 +17,17 @@
             </intent-filter>
         </activity>
         <activity android:label="Places" android:name="com.slabstech.app.thehdtour.quotes.Places" />
-
-
         <activity android:label="AudioPage" android:name="com.slabstech.app.thehdtour.quotes.AudioPage" />
-
-        <activity  android:name="com.slabstech.app.thehdtour.quotes.About"  android:label="About"
-        />
-        <activity android:name="com.slabstech.app.thehdtour.quotes.VSlate"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.Narration"/>
-        <activity android:name="com.slabstech.app.thehdtour.quotes.Slate"
-                  android:label="@string/app_name" />
-
-
-        <!--activity android:name="com.slabstech.app.thehdtour.quotes.VirtualSlate"  android:theme="@android:style/Theme" /-->
-        <activity android:name="com.slabstech.app.thehdtour.quotes.StoryWeb" />
-        <activity android:name="com.slabstech.app.thehdtour.quotes.Pronounciator"/>
-
-
-
-        <!--activity android:name="com.slabstech.app.thehdtour.quotes.EastWeb" /-->
-
-        <!--activity android:name="com.slabstech.app.thehdtour.quotes.WestWeb" /-->
-
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebConnect" />
-
-        <!--activity android:name="com.slabstech.app.thehdtour.quotes.SouthWeb" /-->
-
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebPlaces" />
-
-        <activity android:name="com.slabstech.app.thehdtour.quotes.Info" />
-        <activity android:name="com.slabstech.app.thehdtour.quotes.NotificationReciever" />
-        <activity android:name="com.slabstech.app.thehdtour.quotes.ScheduleQuote" />
-
-
-        <activity android:name="com.slabstech.app.thehdtour.quotes.Narrator" />
-
-        <activity android:name="com.slabstech.app.thehdtour.quotes.South" />
-
-
-        <activity android:name="com.slabstech.app.thehdtour.quotes.West" />
-
-        <activity android:name="com.slabstech.app.thehdtour.quotes.East" />
-
-
-        <receiver android:name="com.slabstech.app.thehdtour.quotes.NotificationReciever"/>
-
     </application>
 
+    <!--
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
-
+-->
 
 
 </manifest>

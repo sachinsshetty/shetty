@@ -49,7 +49,7 @@ public class Places extends TabActivity {
 
 		TabHost.TabSpec spec1 = host.newTabSpec("Narrator");
 		Intent in1 = new Intent(this, Narration.class);
-		spec1.setIndicator("Story Narrator");
+		spec1.setIndicator("Places");
 		spec1.setContent(in1);
 
 		TabHost.TabSpec spec2 = host.newTabSpec("Slate");
@@ -59,7 +59,7 @@ public class Places extends TabActivity {
 		spec2.setContent(in2);
 
 		TabHost.TabSpec spec3 = host.newTabSpec("Pronounciator");
-	Intent in3 = new Intent(this, Pronounciator.class);
+		Intent in3 = new Intent(this, Pronounciator.class);
 		spec3.setIndicator("Pronounciator");
 		spec3.setContent(in3);
 
@@ -69,11 +69,11 @@ public class Places extends TabActivity {
 		spec5.setIndicator("WebSearch");
 		spec5.setContent(in5);
 
-		host.addTab(spec2);
-		host.addTab(spec1);
-		host.addTab(spec3);
+	//	host.addTab(spec2);
+		// 	host.addTab(spec1);
+		//host.addTab(spec3);
 
-		host.addTab(spec5);
+		host.addTab(spec1);
 	}
 
 }

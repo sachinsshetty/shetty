@@ -254,7 +254,7 @@ String saved="";
 
 		
 		
-		SetupTabs();
+	//	SetupTabs();
 		
 	}
 	

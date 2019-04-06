@@ -24,8 +24,7 @@ public class Narration extends Activity {
         super.onCreate(savedInstanceState);
     	setContentView(R.layout.narration);
         mList = (ListView) findViewById(R.id.list);
-	//	mList.setBackgroundResource(R.color.gray);
-		
+
 		String item[]={getString(R.string.exp_rani_chennamma),
 				getString(R.string.exp_rock_garden),
 				getString(R.string.exp_unkal_lake),
@@ -45,36 +44,81 @@ public class Narration extends Activity {
 		mList.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				 String s=null;		
-				if(position ==0)
+				String s=null;
+
+				switch (position)
 				{
-				s="one";
+					case 0:
+					{
+						s="one";
+						break;
+
+					}
+					case 1:
+					{
+						s="two";
+						break;
+
+					}
+					case 2:
+					{
+						s="three";
+						break;
+
+					}
+					case 3:
+					{
+						s="four";
+						break;
+
+					}
+					case 4:
+					{
+						s="five";
+						break;
+
+					}
+					case 5:
+					{
+						s="six";
+					break;
+
+					}
+					case 6:
+					{
+						s="seven";
+
+						break;
+
+					}
+					case 7:
+					{
+						s="eight";
+
+						break;
+
+					}
+					case 8:
+					{
+						s="nine";
+						break;
+					}
+					case 9:
+					{
+						s="ten";
+						break;
+					}
+					case 10:
+					{
+						s="eleven";
+						break;
+
+					}
+					default:
+						break;
 				}
-				else	if(position ==1)
-				{
-				s="two";	
-				}
-				else	if(position ==2)
-				{
-					s="three";
-					
-				}
-				else	if(position ==3)
-				{
-s="four";
-				}
-				else if(position==4)
-				{
-					s="five";
-				}else if(position==5)
-				{
-					s="six";
-				}
-				else if(position==6)
-				{
-					s="seven";
-				}
-				
+
+
 				Bundle bundle1 = new Bundle();
 				String saveVal="no";
 				bundle1.putString("saved", saveVal);
@@ -87,8 +131,6 @@ s="four";
 				setResult(RESULT_OK, myintent);
 				finish();
 			}});
-		
-
 
     }}
 

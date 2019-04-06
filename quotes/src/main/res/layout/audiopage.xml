@@ -14,7 +14,7 @@
         <TextView
             android:id="@+id/title"
             android:layout_width="fill_parent"
-            android:layout_height="60px"
+            android:layout_height="80px"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
             android:textColor="#ff00cccc"
@@ -69,6 +69,7 @@
             android:layout_weight="0.75"
             android:textSize="17sp" />
 
+        <!--
         <TabHost
             android:id="@android:id/tabhost"
             android:layout_width="fill_parent"
@@ -85,6 +86,8 @@
                 android:layout_height="fill_parent"
                 android:paddingTop="60px" />
         </TabHost>
+
+        -->
     </LinearLayout>
 
 </ScrollView>

@@ -20,6 +20,7 @@
             <TextView
                     android:text="Namma Hubballi Dharwada"
                     android:textSize="20sp"
+                    android:gravity="center"
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
@@ -29,6 +30,7 @@
             <TextView
                     android:text="Delivering experiences for "
                     android:textSize="20sp"
+                    android:gravity="center"
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
@@ -37,6 +39,7 @@
             <TextView
                     android:text="a 2 day stay to witness"
                     android:textSize="20sp"
+                    android:gravity="center"
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
@@ -45,6 +48,7 @@
             <TextView
                     android:text="The beauty"
                     android:textSize="20sp"
+                    android:gravity="center"
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
@@ -53,6 +57,7 @@
             <TextView
                     android:text="The Wisdom"
                     android:textSize="20sp"
+                    android:gravity="center"
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
@@ -61,6 +66,7 @@
             <TextView
                     android:text="Of the Land of"
                     android:textSize="20sp"
+                    android:gravity="center"
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
@@ -69,6 +75,7 @@
             <TextView
                     android:text="Poets and Warriors"
                     android:textSize="20sp"
+                    android:gravity="center"
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"

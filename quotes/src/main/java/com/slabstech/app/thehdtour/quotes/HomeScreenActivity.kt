@@ -91,24 +91,24 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
             R.id.gaganyatri -> {
 
 
-                val text = "Gaganyatri"
+                val text = "Gaganyatri : Coming Soon"
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
             }
             R.id.settings -> {
-                val text = "Settings"
+                val text = "Coming Soon"
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
 
             }
             R.id.nav_share -> {
-                val text = "share"
+                val text = "Coming Soon"
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
 
             }
             R.id.nav_send -> {
-                val text = "send"
+                val text = "Coming Soon"
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
 
