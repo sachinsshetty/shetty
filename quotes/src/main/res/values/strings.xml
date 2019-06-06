@@ -47,16 +47,16 @@
     </string-array>
 
     <string-array name="experienceFiles">
-        <item>akshaypatra</item>
-        <item>betta</item>
-        <item>chandramouleshwara</item>
-        <item>chennamma</item>
-        <item>durgadbail</item>
-        <item>hangal</item>
-        <item>kletech</item>
-        <item>matha</item>
-        <item>unkal</item>
-        <item>utsavrock</item>
+        <item>exp_akshaypatra</item>
+        <item>exp_betta</item>
+        <item>exp_chandramouleshwara</item>
+        <item>exp_chennamma</item>
+        <item>exp_durgadbail</item>
+        <item>exp_hangal</item>
+        <item>exp_kletech</item>
+        <item>exp_matha</item>
+        <item>exp_unkal</item>
+        <item>exp_utsavrock</item>
     </string-array>
 
 
@@ -68,10 +68,10 @@
     </string-array>
 
     <string-array name="partnerFiles">
-        <item>chimney</item>
-        <item>vitrag</item>
-        <item>cashewfactory</item>
-        <item>silvercult</item>
+        <item>part_chimney</item>
+        <item>part_vitrag</item>
+        <item>part_cashewfactory</item>
+        <item>part_silvercult</item>
     </string-array>
 
 
