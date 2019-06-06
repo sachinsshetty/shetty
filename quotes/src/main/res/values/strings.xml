@@ -25,16 +25,16 @@
     <color name="gray">#808080ff</color>
 
     <string-array name="experienceList">
-        <item>Kittur Rani Chennamma : The Divine Warrior Female Force</item>
-        <item>the Utsav Rock Garden : Be amazed at the magic of handcrafted rock artifacts</item>
-        <item>Serene Unkal Lake : Take joy boat ride in the calm waters of Unkal Lake</item>
-        <item>Siddharudha Matha : Meditate amidst the serene setting of Siddharudha Math</item>
-        <item>Nrupatunga Betta : Walk/Pedal With Family and connect to nature</item>
-        <item>Gangubhai Hangal Memorial : The voice that lifted countless hearts</item>
-        <item>KLETECH Night Water fountain : Where Science Meets Art aka The Prestige</item>
-        <item>Mystery of Durgadbail : Our Very Own Diagon Alley</item>
-        <item>Chandramouleshwara Temple : Time Travel to a place built 900 years ago</item>
-        <item>Akshay Patra : ISKCON : Gods at Work : Feeding millions of School Going Kids</item>
+        <item>Kittur Rani Chennamma</item>
+        <item>the Utsav Rock Garden</item>
+        <item>Serene Unkal Lake</item>
+        <item>Siddharudha Matha</item>
+        <item>Nrupatunga Betta</item>
+        <item>Gangubhai Hangal Memorial</item>
+        <item>KLETECH Night Water fountain</item>
+        <item>Mystery of Durgadbail</item>
+        <item>Chandramouleshwara Temple</item>
+        <item>Akshay Patra</item>
     </string-array>
 
     <string-array name="partnerList">

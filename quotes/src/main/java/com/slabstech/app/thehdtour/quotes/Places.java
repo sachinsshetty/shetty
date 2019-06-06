@@ -22,7 +22,7 @@ public class Places extends TabActivity {
 		
 		cancelNotification(0);
 
-		String type = savedInstanceState.get("page").toString();
+		String type = getIntent().getExtras().getString("page");
 		
 		SetupTabs(type);
 	}

@@ -40,6 +40,8 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
             val intent : Intent = Intent (this, Places::class.java)
 
+            intent.putExtra("page", "experience")
+
             startActivity(intent)
         }
 
@@ -83,6 +85,8 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
                 val intent : Intent = Intent (this, Places::class.java)
 
                 intent.putExtra("page", "experience")
+
+
                 startActivity(intent)
 
             }
@@ -90,8 +94,13 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
                 val intent : Intent = Intent (this, Places::class.java)
 
-                intent.putExtra("page", "partner")
-                startActivity(intent)
+//                intent.putExtra("page", "partner")
+//                startActivity(intent)
+                val text = "Community Partner : Coming Soon"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
+
+
             }
             R.id.gaganyatri -> {
 
