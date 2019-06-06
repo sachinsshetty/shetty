@@ -88,6 +88,7 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
                 startActivity(intent)
 
             }
+            /*
             R.id.gaganyatri -> {
 
 
@@ -113,6 +114,7 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
                 toast.show()
 
             }
+            */
         }
 
         drawer_layout.closeDrawer(GravityCompat.START)

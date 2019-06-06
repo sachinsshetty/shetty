@@ -18,7 +18,7 @@
                       android:orientation="vertical">
 
             <TextView
-                    android:text="Namma Hubballi Dharwada"
+                    android:text="Namma Hubballi Dharwada Tour"
                     android:textSize="20sp"
                     android:gravity="center"
 
@@ -26,6 +26,7 @@
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
                     tools:layout_editor_absoluteX="155dp" android:id="@+id/textView3"/>
 
+            <!--
 
             <TextView
                     android:text="Delivering experiences for "
@@ -63,8 +64,9 @@
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
                     tools:layout_editor_absoluteX="155dp" android:id="@+id/textView7"/>
 
+            -->
             <TextView
-                    android:text="Of the Land of"
+                    android:text="The Land of"
                     android:textSize="20sp"
                     android:gravity="center"
 
