@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 
-
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.TabActivity;
 import android.content.Intent;
@@ -32,7 +32,7 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AudioPage extends TabActivity implements OnClickListener,
+public class AudioPage extends Activity implements OnClickListener,
 		TextToSpeech.OnInitListener {
 	/** Called when the activity is first created. */
 	String word = null;
@@ -133,16 +133,13 @@ String saved="";
 			inputStream = getResources().openRawResource(R.raw.seven);
 			break;
 
-				case 100:
+		default:
 
-		try {
-				inputStream = openFileInput("temp.txt");
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+
+			inputStream = getResources().openRawResource(R.raw.one);
 
 			break;
+
 		}
 
 		ByteArrayOutputStream outp = new ByteArrayOutputStream();
@@ -175,52 +172,9 @@ String saved="";
 
 		
 		
-		SetupTabs();
-		
+
 	}
 	
-	void SetupTabs() {
-
-		Bundle bundle1 = new Bundle();
-		Bundle bundle2 = new Bundle();
-		Bundle bundle3 = new Bundle();
-
-		bundle1.putString("param1", hosp[1]);
-
-		bundle2.putString("param1", hotel[1]);
-
-		bundle3.putString("param1",placs[1]);
-
-		TabHost host = getTabHost();
-
-		TabHost.TabSpec spec1 = host.newTabSpec("Moral");
-
-		
-		Intent in1 = new Intent(this, Info.class);
-		spec1.setIndicator("Moral");
-		in1.putExtras(bundle1);
-		spec1.setContent(in1);
-
-		
-
-		TabHost.TabSpec spec2 = host.newTabSpec("Hotels");
-		Intent in2 = new Intent(this, Info.class);
-		in2.putExtras(bundle2);
-		spec2.setIndicator("Hotels");
-		spec2.setContent(in2);
-
-		TabHost.TabSpec spec3 = host.newTabSpec("Places");
-		Intent in3 = new Intent(this, Info.class);
-		spec3.setIndicator("Places");
-		in3.putExtras(bundle3);
-		spec3.setContent(in3);
-
-
-		host.addTab(spec1);
-		//host.addTab(spec2);
-		//host.addTab(spec3);
-
-	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
