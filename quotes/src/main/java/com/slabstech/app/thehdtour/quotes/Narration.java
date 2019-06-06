@@ -25,11 +25,20 @@ public class Narration extends Activity {
     	setContentView(R.layout.narration);
         mList = (ListView) findViewById(R.id.list);
 
+		final String pageType = getIntent().getExtras().getString("pageType");
+
 		android.content.res.Resources res = getResources();
-		String[] experiences = res.getStringArray(R.array.experienceList);
+
+		String[] pageList = null ;
+
+		if(pageType.equalsIgnoreCase("Partner")) {
+			pageList = res.getStringArray(R.array.partnerList);
+		}
+		else
+			pageList = res.getStringArray(R.array.experienceList);
 
 		mList.setAdapter(new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, experiences));
+				android.R.layout.simple_list_item_1, pageList));
 
 		mList.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
@@ -39,7 +48,9 @@ public class Narration extends Activity {
 				String saveVal="no";
 				bundle1.putString("saved", saveVal);
 
-				bundle1.putInt("param1", position);
+				bundle1.putInt("keyId", position);
+
+				bundle1.putString("pageType", pageType);
 
 				Intent myintent = new Intent();
 				myintent.setClass(getApplicationContext(), AudioPage.class);

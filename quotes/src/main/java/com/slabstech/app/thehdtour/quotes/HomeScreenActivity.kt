@@ -39,9 +39,7 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         bStart.setOnClickListener {
 
             val intent : Intent = Intent (this, Places::class.java)
-
-            intent.putExtra("page", "experience")
-
+            intent.putExtra("pageType", "Experience")
             startActivity(intent)
         }
 
@@ -83,23 +81,15 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
             R.id.experience -> {
 
                 val intent : Intent = Intent (this, Places::class.java)
-
-                intent.putExtra("page", "experience")
-
-
+                intent.putExtra("pageType", "Experience")
                 startActivity(intent)
 
             }
             R.id.partners -> {
 
-                val intent : Intent = Intent (this, Places::class.java)
-
-//                intent.putExtra("page", "partner")
-//                startActivity(intent)
-                val text = "Community Partner : Coming Soon"
-                val toast = Toast.makeText(applicationContext, text, duration)
-                toast.show()
-
+                 val intent : Intent = Intent (this, Places::class.java)
+                 intent.putExtra("pageType", "Partner")
+                 startActivity(intent)
 
             }
             R.id.gaganyatri -> {

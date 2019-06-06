@@ -1,12 +1,7 @@
 package com.slabstech.app.thehdtour.quotes;
 
 
-import java.util.Calendar;
-
-import android.app.Activity;
-import android.app.AlarmManager;
 import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.app.TabActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -22,9 +17,9 @@ public class Places extends TabActivity {
 		
 		cancelNotification(0);
 
-		String type = getIntent().getExtras().getString("page");
+		String pageType = getIntent().getExtras().getString("pageType");
 		
-		SetupTabs(type);
+		setupTabs(pageType);
 	}
 
 	
@@ -44,25 +39,21 @@ public class Places extends TabActivity {
 
     }
 
-	void SetupTabs(String type) {
+	void setupTabs(String type) {
 
 		TabHost host = getTabHost();
 
-		TabHost.TabSpec spec1 = host.newTabSpec("experience");
 		Intent in1 = new Intent(this, Narration.class);
-		spec1.setIndicator("Experience");
+		Bundle bundle1 = new Bundle();
+		bundle1.putString("pageType", type);
+		in1.putExtras(bundle1);
+
+		TabHost.TabSpec spec1 = host.newTabSpec(type);
+
+		spec1.setIndicator(type);
 		spec1.setContent(in1);
 
-		TabHost.TabSpec spec2 = host.newTabSpec("partner");
-		Intent in2 = new Intent(this, Partner.class);
-
-		spec2.setIndicator("Partners");
-		spec2.setContent(in2);
-
-		if(type.equalsIgnoreCase("experience"))
-			host.addTab(spec1);
-		else
-			host.addTab(spec2);
+		host.addTab(spec1);
 
 	}
 

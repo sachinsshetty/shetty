@@ -25,24 +25,46 @@
     <color name="gray">#808080ff</color>
 
     <string-array name="experienceList">
-        <item>Kittur Rani Chennamma</item>
-        <item>the Utsav Rock Garden</item>
-        <item>Serene Unkal Lake</item>
-        <item>Siddharudha Matha</item>
+        <item>Akshay Patra</item>
         <item>Nrupatunga Betta</item>
+        <item>Chandramouleshwara Temple</item>
+        <item>Kittur Rani Chennamma</item>
+        <item>Mystery of Durgadbail</item>
         <item>Gangubhai Hangal Memorial</item>
         <item>KLETECH Night Water fountain</item>
-        <item>Mystery of Durgadbail</item>
-        <item>Chandramouleshwara Temple</item>
-        <item>Akshay Patra</item>
+        <item>Siddharudha Matha</item>
+        <item>Serene Unkal Lake</item>
+        <item>the Utsav Rock Garden</item>
     </string-array>
 
-    <string-array name="partnerList">
-        <item>The South Chimney : Delicacies of the deccan multi-cuisine served on Banana leaves</item>
-        <item>Vitrag Gold : Imitation Jewellery : Imitation is the best form of Flattery</item>
-        <item>The Silver Culture : Handcrafted silver art for the Diva in You</item>
-        <item >The Cashew Factory : Hands-on Tour of Cashew Industry : Charlie and The Chocolate Factory</item>
+    <string-array name="experienceFiles">
+        <item>akshaypatra</item>
+        <item>betta</item>
+        <item>chandramouleshwara</item>
+        <item>chennamma</item>
+        <item>durgadbail</item>
+        <item>hangal</item>
+        <item>kletech</item>
+        <item>matha</item>
+        <item>unkal</item>
+        <item>utsavrock</item>
     </string-array>
+
+
+    <string-array name="partnerList">
+        <item>The South Chimney</item>
+        <item>Vitrag Gold</item>
+        <item>The Silver Culture</item>
+        <item >The Cashew Factory</item>
+    </string-array>
+
+    <string-array name="partnerFiles">
+        <item>chimney</item>
+        <item>vitrag</item>
+        <item>cashewfactory</item>
+        <item>silvercult</item>
+      </string-array>
+
 
 
 </resources>

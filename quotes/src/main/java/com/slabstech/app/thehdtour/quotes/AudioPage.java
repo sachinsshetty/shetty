@@ -9,14 +9,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Locale;
 
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -29,7 +27,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.Button;
-import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,7 +57,10 @@ public class AudioPage extends Activity implements OnClickListener,
 		);
 		Bundle bundle = this.getIntent().getExtras();
 
-		final int placeId = bundle.getInt("param1");
+		final int placeId = bundle.getInt("keyId");
+
+
+		String pageType = bundle.getString("pageType");
 
 		//cityName=param1;
 		
@@ -72,19 +72,30 @@ public class AudioPage extends Activity implements OnClickListener,
 
 		android.content.res.Resources res = getResources();
 
-		String[] experiences = res.getStringArray(R.array.experienceList);
+		String[] pageList = null ;
+		String[] fileName = null ;
 
-		Field[] fields=R.raw.class.getFields();
 
-		txt = experiences[placeId];
 
-		tx.setText(experiences[placeId]);
+		if(pageType.equalsIgnoreCase("Partner")) {
+			pageList = res.getStringArray(R.array.partnerList);
+			fileName = res.getStringArray(R.array.partnerFiles);
+		}else {
+
+			pageList = res.getStringArray(R.array.experienceList);
+			fileName = res.getStringArray(R.array.experienceFiles);
+
+		}
+
+		txt = pageList[placeId];
+
+		tx.setText(pageList[placeId]);
 
 
 		Button b1 = (Button) findViewById(R.id.speak);
 		Button b2 = (Button) findViewById(R.id.stop);
 		
-		word = experiences[placeId];
+		word = pageList[placeId];
 		b1.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				speak1(placeId);
@@ -101,11 +112,14 @@ public class AudioPage extends Activity implements OnClickListener,
 
 		InputStream inputStream = null;
 
+
 		ByteArrayOutputStream outp = new ByteArrayOutputStream();
 		int i;
 
 		try {
-			inputStream = getResources().openRawResource(fields[placeId].getInt(placeId));
+			inputStream = getResources().openRawResource(
+					getResources().getIdentifier(fileName[placeId],
+							"raw", getPackageName()));
 
 			i = inputStream.read();
 			while (i != -1) {
@@ -116,10 +130,6 @@ public class AudioPage extends Activity implements OnClickListener,
 		}
 
 		catch (IOException e) {
-			e.printStackTrace();
-
-		}catch (IllegalAccessException e)
-		{
 			e.printStackTrace();
 
 		}
