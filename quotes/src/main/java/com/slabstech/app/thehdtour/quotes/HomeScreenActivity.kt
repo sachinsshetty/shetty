@@ -82,11 +82,16 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
                 val intent : Intent = Intent (this, Places::class.java)
 
+                intent.putExtra("page", "experience")
                 startActivity(intent)
 
             }
             R.id.partners -> {
 
+                val intent : Intent = Intent (this, Places::class.java)
+
+                intent.putExtra("page", "partner")
+                startActivity(intent)
             }
             R.id.gaganyatri -> {
 
@@ -119,5 +124,3 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
         return true
     }
 }
-
-

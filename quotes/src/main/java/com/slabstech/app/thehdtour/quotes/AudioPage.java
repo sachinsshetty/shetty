@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Locale;
 
@@ -49,11 +50,8 @@ public class AudioPage extends Activity implements OnClickListener,
 	String cityName="";
 	String txt = null;
 	String value = null;
-String saved="";
-	String spkval[] = null;
-	String hosp[];
-	String placs[];
-	String hotel[];
+	String saved="";
+	String spkval;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -62,7 +60,7 @@ String saved="";
 		);
 		Bundle bundle = this.getIntent().getExtras();
 
-		int param1 = bundle.getInt("param1");
+		final int placeId = bundle.getInt("param1");
 
 		//cityName=param1;
 		
@@ -72,23 +70,24 @@ String saved="";
 
 		TextView tx = (TextView) findViewById(R.id.title);
 
-
 		android.content.res.Resources res = getResources();
 
 		String[] experiences = res.getStringArray(R.array.experienceList);
 
-		txt = experiences[param1];
+		Field[] fields=R.raw.class.getFields();
 
-		tx.setText(experiences[param1]);
+		txt = experiences[placeId];
+
+		tx.setText(experiences[placeId]);
 
 
 		Button b1 = (Button) findViewById(R.id.speak);
 		Button b2 = (Button) findViewById(R.id.stop);
 		
-		word = experiences[param1];
+		word = experiences[placeId];
 		b1.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				speak1(story);
+				speak1(placeId);
 			}
 
 		});
@@ -102,49 +101,12 @@ String saved="";
 
 		InputStream inputStream = null;
 
-		switch (story) {
-		case 1:
-			inputStream = getResources().openRawResource(R.raw.one);
-			break;
-
-		case 2:
-		inputStream = getResources().openRawResource(R.raw.two);
-
-			break;
-
-		case 3:
-			inputStream = getResources().openRawResource(R.raw.three);
-			break;
-
-		case 4:
-			inputStream = getResources().openRawResource(R.raw.four);
-			break;
-
-		case 5:
-			inputStream = getResources().openRawResource(R.raw.five);
-
-			break;
-
-		case 6:
-			inputStream = getResources().openRawResource(R.raw.six);
-			break;
-
-		case 7:
-			inputStream = getResources().openRawResource(R.raw.seven);
-			break;
-
-		default:
-
-
-			inputStream = getResources().openRawResource(R.raw.one);
-
-			break;
-
-		}
-
 		ByteArrayOutputStream outp = new ByteArrayOutputStream();
 		int i;
+
 		try {
+			inputStream = getResources().openRawResource(fields[placeId].getInt(placeId));
+
 			i = inputStream.read();
 			while (i != -1) {
 				outp.write(i);
@@ -156,22 +118,13 @@ String saved="";
 		catch (IOException e) {
 			e.printStackTrace();
 
+		}catch (IllegalAccessException e)
+		{
+			e.printStackTrace();
+
 		}
 
-		value = (String) outp.toString();
-
-		
-		hosp= value.split("&");
-		
-
-		placs= value.split("%");
-		hotel= value.split("@");
-		
-		
-		spkval = value.split("#");
-
-		
-		
+		spkval = (String) outp.toString();
 
 	}
 	
@@ -414,8 +367,8 @@ String saved="";
 	private void speak1(int city) {
 		// TODO Auto-generated method stub
 		TextView info = (TextView) findViewById(R.id.info);
-		info.setText(spkval[0]);
-		Tts.speak(spkval[0], TextToSpeech.QUEUE_FLUSH, // Drop all pending
+		info.setText(spkval);
+		Tts.speak(spkval, TextToSpeech.QUEUE_FLUSH, // Drop all pending
 														// entries in the
 														// playback queue.
 				null);

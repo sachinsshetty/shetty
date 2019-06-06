@@ -21,9 +21,10 @@ public class Places extends TabActivity {
 		setContentView(R.layout.places);
 		
 		cancelNotification(0);
+
+		String type = savedInstanceState.get("page").toString();
 		
-		
-		SetupTabs();
+		SetupTabs(type);
 	}
 
 	
@@ -43,13 +44,13 @@ public class Places extends TabActivity {
 
     }
 
-	void SetupTabs() {
+	void SetupTabs(String type) {
 
 		TabHost host = getTabHost();
 
 		TabHost.TabSpec spec1 = host.newTabSpec("experience");
 		Intent in1 = new Intent(this, Narration.class);
-		spec1.setIndicator("Places");
+		spec1.setIndicator("Experience");
 		spec1.setContent(in1);
 
 		TabHost.TabSpec spec2 = host.newTabSpec("partner");
@@ -58,8 +59,10 @@ public class Places extends TabActivity {
 		spec2.setIndicator("Partners");
 		spec2.setContent(in2);
 
-		host.addTab(spec1);
-		host.addTab(spec2);
+		if(type.equalsIgnoreCase("experience"))
+			host.addTab(spec1);
+		else
+			host.addTab(spec2);
 
 	}
 
