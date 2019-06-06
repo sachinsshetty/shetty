@@ -17,11 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="Places" android:name="com.slabstech.app.thehdtour.quotes.Places" />
-        <activity android:label="AudioPage" android:name="com.slabstech.app.thehdtour.quotes.AudioPage" />
+        <activity android:label="Places" android:name="com.slabstech.app.thehdtour.quotes.Places"/>
+        <activity android:label="AudioPage" android:name="com.slabstech.app.thehdtour.quotes.AudioPage"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.Narration"/>
-        <activity android:name="com.slabstech.app.thehdtour.quotes.WebConnect" />
-        <activity android:name="com.slabstech.app.thehdtour.quotes.WebPlaces" />
+        <activity android:name="com.slabstech.app.thehdtour.quotes.WebConnect"/>
+        <activity android:name="com.slabstech.app.thehdtour.quotes.WebPlaces"/>
     </application>
 
     <!--

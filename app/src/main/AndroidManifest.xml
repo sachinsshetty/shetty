@@ -1,2 +1,2 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.slabstech.people.shetty"/>
+<manifest
+        package="com.slabstech.people.shetty"/>
