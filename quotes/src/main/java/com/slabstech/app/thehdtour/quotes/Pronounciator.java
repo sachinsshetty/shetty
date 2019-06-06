@@ -1,4 +1,4 @@
-/* 
+/*
 
  * Copyright (C) 2008 The Android Open Source Project
  *
@@ -26,7 +26,6 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -35,17 +34,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
-
-
 /**
  * Sample code that invokes the speech recognition intent API.
  */
 public class Pronounciator extends Activity implements OnClickListener {
-    
+
 
     private static final int VOICE_RECOGNITION_REQUEST_CODE = 1234;
-    
+
     private ListView mList;
 
     /**
@@ -60,7 +56,7 @@ public class Pronounciator extends Activity implements OnClickListener {
 
         // Get display items for later interaction
         Button speakButton = (Button) findViewById(R.id.btn_speak);
-        
+
         mList = (ListView) findViewById(R.id.list);
 
         // Check to see if a recognition activity is present
@@ -105,33 +101,23 @@ public class Pronounciator extends Activity implements OnClickListener {
             ArrayList<String> matches = data.getStringArrayListExtra(
                     RecognizerIntent.EXTRA_RESULTS);
             //mList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,matches));
-    
-        String hello="hello";
-  String com="computer";
-  String school="school";
-  String story="story";
-        if(hello.equals(matches.get(0).toString()))
-        	{
-        	Toast.makeText(getApplicationContext(), "Hello Word Matched", Toast.LENGTH_SHORT).show();
-        	}
-        
-        else if(com.equals(matches.get(1).toString()))
-    	{
-    	Toast.makeText(getApplicationContext(), "Computer Word Matched", Toast.LENGTH_SHORT).show();
-    	}
 
-        else if(school.equals(matches.get(2).toString()))
-    	{
-    	Toast.makeText(getApplicationContext(), "Computer Word Matched", Toast.LENGTH_SHORT).show();
-    	}
+            String hello = "hello";
+            String com = "computer";
+            String school = "school";
+            String story = "story";
+            if (hello.equals(matches.get(0).toString())) {
+                Toast.makeText(getApplicationContext(), "Hello Word Matched", Toast.LENGTH_SHORT).show();
+            } else if (com.equals(matches.get(1).toString())) {
+                Toast.makeText(getApplicationContext(), "Computer Word Matched", Toast.LENGTH_SHORT).show();
+            } else if (school.equals(matches.get(2).toString())) {
+                Toast.makeText(getApplicationContext(), "Computer Word Matched", Toast.LENGTH_SHORT).show();
+            } else if (story.equals(matches.get(3).toString())) {
+                Toast.makeText(getApplicationContext(), "Computer Word Matched", Toast.LENGTH_SHORT).show();
+            }
 
-        else if(story.equals(matches.get(3).toString()))
-    	{
-    	Toast.makeText(getApplicationContext(), "Computer Word Matched", Toast.LENGTH_SHORT).show();
-    	}
-    
         }
-        
+
 
         super.onActivityResult(requestCode, resultCode, data);
     }
