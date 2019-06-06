@@ -25,6 +25,7 @@
         <activity android:name="com.slabstech.app.thehdtour.quotes.Narration"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebConnect"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebPlaces"/>
+        <activity android:name="com.slabstech.app.thehdtour.quotes.FullImageActivity"></activity>
     </application>
 
     <!--

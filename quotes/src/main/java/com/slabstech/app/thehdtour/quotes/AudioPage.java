@@ -10,12 +10,17 @@ import android.view.*;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Locale;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+
 
 public class AudioPage extends Activity implements OnClickListener,
         TextToSpeech.OnInitListener {
@@ -50,6 +55,25 @@ public class AudioPage extends Activity implements OnClickListener,
         saved = bundle.getString("saved");
 
         setContentView(R.layout.audiopage);
+
+        GridView gridView = (GridView) findViewById(R.id.grid_view);
+
+        gridView.setVisibility(View.GONE);
+        // Instance of ImageAdapter Class
+        gridView.setAdapter(new ImageAdapter(this));
+
+        gridView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View v,
+                                    int position, long id) {
+
+                // Sending image id to FullScreenActivity
+                Intent i = new Intent(getApplicationContext(), FullImageActivity.class);
+                // passing array index
+                i.putExtra("id", position);
+                startActivity(i);
+            }
+        });
 
         android.content.res.Resources res = getResources();
 
