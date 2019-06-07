@@ -28,9 +28,7 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
         nav_view.setNavigationItemSelectedListener(this)
 
-
         val bStart = findViewById(R.id.start) as Button
-
 
         bStart.setOnClickListener {
 

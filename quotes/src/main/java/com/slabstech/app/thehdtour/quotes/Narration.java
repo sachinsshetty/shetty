@@ -178,11 +178,7 @@ public class Narration extends Activity {
                                     int position, long id) {
 
                 Bundle bundle1 = new Bundle();
-                String saveVal = "no";
-                bundle1.putString("saved", saveVal);
-
                 bundle1.putInt("keyId", position);
-
                 bundle1.putString("pageType", pageType);
 
                 Intent myintent = new Intent();
@@ -193,11 +189,5 @@ public class Narration extends Activity {
                 finish();
             }
         });
-
-
-
     }
 }
-
-        
-

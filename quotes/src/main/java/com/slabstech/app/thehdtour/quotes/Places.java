@@ -17,27 +17,9 @@ public class Places extends TabActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.places);
 
-        cancelNotification(0);
-
         String pageType = getIntent().getExtras().getString("pageType");
 
         setupTabs(pageType);
-    }
-
-
-    public void cancelNotification(int notificationId) {
-
-
-        if (Context.NOTIFICATION_SERVICE != null) {
-
-            String ns = Context.NOTIFICATION_SERVICE;
-
-            NotificationManager nMgr = (NotificationManager) getApplicationContext().getSystemService(ns);
-
-            nMgr.cancel(notificationId);
-
-        }
-
     }
 
     void setupTabs(String type) {
