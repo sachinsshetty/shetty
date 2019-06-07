@@ -18,7 +18,7 @@
                       android:orientation="vertical">
 
             <TextView
-                    android:text="Namma Hubballi Dharwada Tour"
+                    android:text="@string/home_screen_content_1"
                     android:textSize="20sp"
                     android:gravity="center"
 
@@ -66,7 +66,7 @@
 
             -->
             <TextView
-                    android:text="The Land of"
+                    android:text="@string/home_screen_content_2"
                     android:textSize="20sp"
                     android:gravity="center"
 
@@ -75,7 +75,7 @@
                     tools:layout_editor_absoluteX="155dp" android:id="@+id/textView8"/>
 
             <TextView
-                    android:text="Poets and Warriors"
+                    android:text="@string/home_screen_content_3"
                     android:textSize="20sp"
                     android:gravity="center"
 
@@ -91,7 +91,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_weight="1"
                     android:textColor="#ffffff"
-                    android:text="Start"
+                    android:text="@string/button_start"
                     android:background="@drawable/blue"
                     android:textSize="20sp"
                     android:textStyle="normal"/>

@@ -108,10 +108,14 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
             }
             R.id.settings -> {
 
+                val text = "Coming Soon"
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
+/*
                 val intent: Intent = Intent(this, Settings::class.java)
                 startActivity(intent)
 
-            }
+  */          }
 
             /*
             R.id.nav_share -> {

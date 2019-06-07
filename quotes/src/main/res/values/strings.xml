@@ -5,11 +5,22 @@
     <string name="nav_header_subtitle">info@slabs.tech</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="nav_community_partner">Community Partners</string>
+    <string name="nav_experience">The Experience</string>
+    <string name="nav_ticket">Buy Ticket</string>
+    <string name="nav_gaganyatri">Gaganyatri</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="button_speak">Speak</string>
+    <string name="button_start">Start</string>
+    <string name="button_stop">Stop</string>
+
+    <string name="home_screen_content_1">Namma Hubballi Dharwada Tour</string>
+    <string name="home_screen_content_2">The Land of</string>
+    <string name="home_screen_content_3">Poets and Warriors</string>
 
     <string name="ticketUrl">https://ti.to/the-hd-tour/hd-limited-edition-march</string>
     <string name="gaganyatriUrl">https://gaganyatri.com/tags/#books-pub</string>
-
-    <string name="app_names">The HD Tour</string>
 
     <color name="green">#000cff</color>
     <color name="blue">#000fff</color>
@@ -17,23 +28,6 @@
     <color name="white">#ffffff</color>
     <color name="yellow">#000eff</color>
     <color name="darkgray">#404040ff</color>
-    <string name="about_contact">Please feel free to contact us and mail us your valuable feedback @ info@slabs.tech .
-    </string>
-    <string name="about_design">slabstech</string>
-
-    <string name="about_tour">The features provided by the system includes a story narrator which reads fables and
-        short-stories , it also includes a pronounciation tutor- which allows the user to proceed to next word only
-        after the correct utterance of the word. The striking feature of the app is be the virtual slate, it helps the
-        user to learn different alphabets by tracing them on the screen.
-    </string>
-    <string name="help_help">click the menu button for information on how to change language and speed</string>
-    <string name="help_lang_text">To change language when audio is being played, click the stop button so that the audio
-        output stops.Next click on the menu button ,then click the language button and select the required language
-    </string>
-    <string name="help_speed_text">To change speed when audio is being played, click the stop button so that the audio
-        output stops.Next click on the menu button. then click on the speed button and select the required rate of speed
-    </string>
-
     <color name="gray">#808080ff</color>
 
     <string-array name="experienceList">
@@ -62,7 +56,6 @@
         <item>exp_utsavrock</item>
     </string-array>
 
-
     <string-array name="partnerList">
         <item>The South Chimney</item>
         <item>Vitrag Gold</item>
@@ -77,5 +70,21 @@
         <item>part_silvercult</item>
     </string-array>
 
+    <string name="about_contact">Please feel free to contact us and mail us your valuable feedback @ info@slabs.tech .
+    </string>
+    <string name="about_design">slabstech</string>
+
+    <string name="about_tour">The features provided by the system includes a story narrator which reads fables and
+        short-stories , it also includes a pronunciation tutor- which allows the user to proceed to next word only
+        after the correct utterance of the word. The striking feature of the app is be the virtual slate, it helps the
+        user to learn different alphabets by tracing them on the screen.
+    </string>
+    <string name="help_help">click the menu button for information on how to change language and speed</string>
+    <string name="help_lang_text">To change language when audio is being played, click the stop button so that the audio
+        output stops.Next click on the menu button ,then click the language button and select the required language
+    </string>
+    <string name="help_speed_text">To change speed when audio is being played, click the stop button so that the audio
+        output stops.Next click on the menu button. then click on the speed button and select the required rate of speed
+    </string>
 
 </resources>

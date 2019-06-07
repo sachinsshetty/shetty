@@ -6,19 +6,24 @@
     <group android:checkableBehavior="single">
         <item
                 android:id="@+id/experience"
-                android:title="The Experiences"/>
+                android:title="@string/nav_experience"
+                android:icon="@drawable/experience_icon"/>
         <item
                 android:id="@+id/partners"
-                android:title="Community Partners"/>
+                android:title="@string/nav_community_partner"
+                android:icon="@drawable/partner_icon"/>
         <item
                 android:id="@+id/ticket"
-                android:title="Ticket"/>
+                android:title="@string/nav_ticket"
+                android:icon="@drawable/ticket_icon"/>
         <item
                 android:id="@+id/gaganyatri"
-                android:title="Gaganyatri"/>
+                android:title="@string/nav_gaganyatri"
+                android:icon="@drawable/gaganyatri_icon"/>
         <item
                 android:id="@+id/settings"
-                android:title="Settings"/>
+                android:title="@string/nav_settings"
+                android:icon="@drawable/settings_icon"/>
 
     </group>
 
