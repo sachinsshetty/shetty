@@ -88,20 +88,32 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
                 startActivity(intent)
 
             }
-            /*
+            R.id.ticket -> {
+
+                val intent: Intent = Intent(this, WebViewActivity::class.java)
+                val webUrl: String = getString(R.string.ticketUrl)
+                intent.putExtra("webUrl", webUrl)
+
+                startActivity(intent)
+
+            }
             R.id.gaganyatri -> {
 
+                val intent: Intent = Intent(this, WebViewActivity::class.java)
+                val webUrl: String = getString(R.string.gaganyatriUrl)
+                intent.putExtra("webUrl", webUrl)
 
-                val text = "Gaganyatri : Coming Soon"
-                val toast = Toast.makeText(applicationContext, text, duration)
-                toast.show()
+                startActivity(intent)
+
             }
             R.id.settings -> {
-                val text = "Coming Soon"
-                val toast = Toast.makeText(applicationContext, text, duration)
-                toast.show()
+
+                val intent: Intent = Intent(this, Settings::class.java)
+                startActivity(intent)
 
             }
+
+            /*
             R.id.nav_share -> {
                 val text = "Coming Soon"
                 val toast = Toast.makeText(applicationContext, text, duration)

@@ -26,10 +26,13 @@
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebConnect"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebPlaces"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.FullImageActivity"></activity>
+        <activity android:name="com.slabstech.app.thehdtour.quotes.WebViewActivity"></activity>
+        <activity android:name="com.slabstech.app.thehdtour.quotes.Settings"></activity>
     </application>
 
-    <!--
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
 -->

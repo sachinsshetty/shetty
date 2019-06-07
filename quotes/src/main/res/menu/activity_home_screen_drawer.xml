@@ -10,15 +10,16 @@
         <item
                 android:id="@+id/partners"
                 android:title="Community Partners"/>
-
-        <!--
+        <item
+                android:id="@+id/ticket"
+                android:title="Ticket"/>
         <item
                 android:id="@+id/gaganyatri"
                 android:title="Gaganyatri"/>
         <item
                 android:id="@+id/settings"
                 android:title="Settings"/>
-        -->
+
     </group>
 
     <!--

@@ -6,6 +6,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="ticketUrl">https://ti.to/the-hd-tour/hd-limited-edition-march</string>
+    <string name="gaganyatriUrl">https://gaganyatri.com/tags/#books-pub</string>
+
     <string name="app_names">The HD Tour</string>
 
     <color name="green">#000cff</color>
