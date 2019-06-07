@@ -182,7 +182,7 @@ public class Narration extends Activity {
                 bundle1.putString("pageType", pageType);
 
                 Intent myintent = new Intent();
-                myintent.setClass(getApplicationContext(), AudioPage.class);
+                myintent.setClass(getApplicationContext(), ContentPage.class);
                 myintent.putExtras(bundle1);
                 startActivityForResult(myintent, 0);
                 setResult(RESULT_OK, myintent);

@@ -26,45 +26,6 @@
                     android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
                     tools:layout_editor_absoluteX="155dp" android:id="@+id/textView3"/>
 
-            <!--
-
-            <TextView
-                    android:text="Delivering experiences for "
-                    android:textSize="20sp"
-                    android:gravity="center"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView4"/>
-
-            <TextView
-                    android:text="a 2 day stay to witness"
-                    android:textSize="20sp"
-                    android:gravity="center"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView5"/>
-
-            <TextView
-                    android:text="The beauty"
-                    android:textSize="20sp"
-                    android:gravity="center"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView6"/>
-
-            <TextView
-                    android:text="The Wisdom"
-                    android:textSize="20sp"
-                    android:gravity="center"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="0dp"
-                    tools:layout_editor_absoluteX="155dp" android:id="@+id/textView7"/>
-
-            -->
             <TextView
                     android:text="@string/home_screen_content_2"
                     android:textSize="20sp"

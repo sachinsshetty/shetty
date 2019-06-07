@@ -16,7 +16,7 @@
         <activity android:name=".HomeScreenActivity"
                   android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:label="Places" android:name="com.slabstech.app.thehdtour.quotes.Places"/>
-        <activity android:label="AudioPage" android:name="com.slabstech.app.thehdtour.quotes.AudioPage"/>
+        <activity android:label="AudioPage" android:name="com.slabstech.app.thehdtour.quotes.ContentPage"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.Narration"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.FullImageActivity"></activity>
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebViewActivity"></activity>

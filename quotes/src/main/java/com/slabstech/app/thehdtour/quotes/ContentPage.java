@@ -3,15 +3,12 @@ package com.slabstech.app.thehdtour.quotes;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.GridView;
-import android.widget.TextView;
+import android.widget.*;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 
 
-public class AudioPage extends Activity {
+public class ContentPage extends Activity {
     /**
      * Called when the activity is first created.
      */
@@ -22,27 +19,37 @@ public class AudioPage extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.audiopage);
+        setContentView(R.layout.content_page);
 
 
-        TextView titleTextView = findViewById(R.id.title);
-        TextView info = findViewById(R.id.info);
+        //TextView titleTextView = findViewById(R.id.title);
+        //TextView info = findViewById(R.id.info);
 
-        setAdditionalLayout();
+        //setAdditionalLayout();
         Bundle bundle = this.getIntent().getExtras();
 
         int placeId = bundle.getInt("keyId");
         String pageType = bundle.getString("pageType");
-
+        this.setTitle(pageType);
         String titleText = null;
 
         titleText = getPageTitle(pageType, placeId);
-        titleTextView.setText(titleText);
+        //titleTextView.setText(titleText);
 
         String speakValue = null;
 
         speakValue = getPageContent(placeId);
-        info.setText(speakValue);
+        //info.setText(speakValue);
+
+        ListView mList;
+
+        mList = (ListView) findViewById(R.id.list);
+
+        String[]content = getResources().getStringArray(R.array.partnerList);
+        mList.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, content));
+
+
 
     }
 
@@ -76,10 +83,10 @@ public class AudioPage extends Activity {
         return titleText ;
     }
 
+    /*
     private void setAdditionalLayout() {
 
         GridView gridView = findViewById(R.id.grid_view);
-
 
         Boolean gridDisplay = false;
 
@@ -101,17 +108,7 @@ public class AudioPage extends Activity {
             });
 
         }
-
-        Button buttonSpeak = findViewById(R.id.speak);
-        Button buttonStop = findViewById(R.id.stop);
-
-
-        Boolean voiceOver = false;
-        if (voiceOver) {
-            buttonSpeak.setVisibility(View.VISIBLE);
-            buttonStop.setVisibility(View.VISIBLE);
-
-        }
     }
+    */
 
 }
