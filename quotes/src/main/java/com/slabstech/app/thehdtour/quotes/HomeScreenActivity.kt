@@ -70,7 +70,6 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
         val duration = Toast.LENGTH_SHORT
 
-
         when (item.itemId) {
             R.id.experience -> {
 
