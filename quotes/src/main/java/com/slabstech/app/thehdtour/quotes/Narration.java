@@ -25,13 +25,34 @@ public class Narration extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.narration);
 
+
         pageSetup();
-        //onlinePageSetup();
-
+        //TODO
+        onlinePageSetup();
+        checkForUpdates();
     }
-/*
-    private void onlinePageSetup() {
 
+    private void checkForUpdates() {
+        /*
+        // Creates instance of the manager.
+        AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(context);
+
+// Returns an intent object that you use to check for an update.
+        Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
+
+// Checks that the platform will allow the specified type of update.
+        appUpdateInfoTask.addOnSuccessListener(appUpdateInfo -> {
+            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
+                    // For a flexible update, use AppUpdateType.FLEXIBLE
+                    && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE)) {
+                // Request the update.
+            }
+        });
+*/
+    }
+
+    private void onlinePageSetup() {
+/*
         ListView onLineList = (ListView) findViewById(R.id.online_list);
 
         String[] onlinePageList = null;
@@ -150,9 +171,9 @@ public class Narration extends Activity {
         });
 
 
-
-    }
 */
+    }
+
     private void pageSetup() {
 
         ListView mList;

@@ -31,29 +31,31 @@
     <color name="gray">#808080ff</color>
 
     <string-array name="experienceList">
-        <item>Akshay Patra</item>
-        <item>Nrupatunga Betta</item>
-        <item>Chandramouleshwara Temple</item>
         <item>Kittur Rani Chennamma</item>
-        <item>Mystery of Durgadbail</item>
+        <item>Chandramouleshwara Temple</item>
         <item>Gangubhai Hangal Memorial</item>
+        <item>Akshay Patra</item>
+        <item>the Utsav Rock Garden</item>
         <item>KLETECH Night Water fountain</item>
+        <item>Nrupatunga Betta</item>
         <item>Siddharudha Matha</item>
         <item>Serene Unkal Lake</item>
-        <item>the Utsav Rock Garden</item>
+        <item>Glass House</item>
+        <item>Mystery of Durgadbail</item>
     </string-array>
 
     <string-array name="experienceFiles">
-        <item>exp_akshaypatra</item>
-        <item>exp_betta</item>
-        <item>exp_chandramouleshwara</item>
         <item>exp_chennamma</item>
-        <item>exp_durgadbail</item>
+        <item>exp_chandramouleshwara</item>
         <item>exp_hangal</item>
+        <item>exp_akshaypatra</item>
+        <item>exp_utsavrock</item>
         <item>exp_kletech</item>
+        <item>exp_betta</item>
         <item>exp_matha</item>
         <item>exp_unkal</item>
-        <item>exp_utsavrock</item>
+        <item>exp_glasshouse</item>
+        <item>exp_durgadbail</item>
     </string-array>
 
     <string-array name="partnerList">
@@ -69,22 +71,5 @@
         <item>part_cashewfactory</item>
         <item>part_silvercult</item>
     </string-array>
-
-    <string name="about_contact">Please feel free to contact us and mail us your valuable feedback @ info@slabs.tech .
-    </string>
-    <string name="about_design">slabstech</string>
-
-    <string name="about_tour">The features provided by the system includes a story narrator which reads fables and
-        short-stories , it also includes a pronunciation tutor- which allows the user to proceed to next word only
-        after the correct utterance of the word. The striking feature of the app is be the virtual slate, it helps the
-        user to learn different alphabets by tracing them on the screen.
-    </string>
-    <string name="help_help">click the menu button for information on how to change language and speed</string>
-    <string name="help_lang_text">To change language when audio is being played, click the stop button so that the audio
-        output stops.Next click on the menu button ,then click the language button and select the required language
-    </string>
-    <string name="help_speed_text">To change speed when audio is being played, click the stop button so that the audio
-        output stops.Next click on the menu button. then click on the speed button and select the required rate of speed
-    </string>
 
 </resources>

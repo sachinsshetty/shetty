@@ -21,46 +21,44 @@ public class ContentPage extends Activity {
 
         setContentView(R.layout.content_page);
 
-
-        //TextView titleTextView = findViewById(R.id.title);
-        //TextView info = findViewById(R.id.info);
-
         //setAdditionalLayout();
         Bundle bundle = this.getIntent().getExtras();
 
         int placeId = bundle.getInt("keyId");
         String pageType = bundle.getString("pageType");
-        this.setTitle(pageType);
-        String titleText = null;
 
-        titleText = getPageTitle(pageType, placeId);
-        //titleTextView.setText(titleText);
+        String contentTitle = getPageTitle(pageType,placeId);
 
-        String speakValue = null;
+        TextView titleView = new TextView(this);
+        titleView.setText(pageType + " : " + contentTitle);
+        titleView.setTextSize(20.0f);
+        titleView.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
 
-        speakValue = getPageContent(placeId);
-        //info.setText(speakValue);
+
+        String content[] = null;
+
+        content = getPageContent(placeId);
 
         ListView mList;
 
         mList = (ListView) findViewById(R.id.list);
 
-        String[]content = getResources().getStringArray(R.array.partnerList);
+
+        mList.addHeaderView(titleView);
+        this.setTitle(pageType);
         mList.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, content));
 
-
-
     }
 
-    private String getPageContent(int placeId) {
+    private String[] getPageContent(int placeId) {
         android.content.res.Resources res = getResources();
         String fileName = null ;
 
         fileName = fileList[placeId];
-        String speakValue = null;
+        String speakValue[] = null;
 
-        speakValue = res.getString(res.getIdentifier( fileName, "string", getPackageName()));
+        speakValue = res.getStringArray(res.getIdentifier( fileName, "array", getPackageName()));
         return speakValue;
 
     }

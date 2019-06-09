@@ -1,133 +1,132 @@
 <resources>
-    <string name="exp_akshaypatra">ISKCON : Gods at Work : Feeding millions of School Going Kids</string>
-    <string name="exp_betta">Walk/Pedal With Family and connect to nature</string>
-    <string name="exp_chandramouleshwara">Time Travel to a place built 900 years ago</string>
-    <string name="exp_chennamma">The Divine Warrior Female Forces</string>
-    <string name="exp_durgadbail">Our Very Own Diagon Alleys</string>
-    <string name="exp_hangal">The voice that lifted countless hearts</string>
-    <string name="exp_kletech"> Where Science Meets Art aka The Prestige</string>
-    <string name="exp_matha">Meditate amidst the serene setting of Siddharudha Matha</string>
-    <string name="exp_unkal">Take joy boat ride in the calm waters of Unkal Lake</string>
-    <string name="exp_utsavrock">Be amazed at the magic of handcrafted rock artifacts</string>
-    <string name="part_cashewfactory">
-        ### What do i get ?
+    <string-array name="exp_akshaypatra">
+        <item>ISKCON : Gods at Work : Feeding millions of School Going Kids</item>
+        <item>The Akshaya Patra Foundation, a non-profit organization with the vision that no child shall be deprived of education because of hunger, runs the largest midday meal program in the world</item>
+        <item>https://karnataka.akshayapatra.org/</item>
+      </string-array>
 
-        Remember Charlie and the Chocolate Factory
+    <string-array name="exp_betta">
+        <item>Walk/Pedal With Family and connect to nature</item>
+        <item>travellers will get the chance to see the beautiful view of the cities of Hubli and Dharwad.</item>
+        <item>It is situated on Unkal Hills in Hubli.</item>
+        <item>They can also visit a Devi Temple that is situated on top of Nrupatunga Betta.</item>
+        <item>visitors can have a bird's eye view of the airport in the west and Amargol in the north.</item>
+        <item>This site is an ideal spot for people who want to spend time away from the chaotic urban life</item>
+    </string-array>
 
-        Now everyone can be Charlie
+    <string-array name="exp_chandramouleshwara">
+        <item>Time Travel to a place built 900 years ago from the Badami Chalukyan era</item>
+        <item>It was built on the lines of Badami, Aihole and Pattadakal temples, is a Monument of National Importance</item>
+        <item>Unlike other Shiva temples in the North Karnataka region, the Chandramouleshwar Temple has four doors in as many directions, altogether accounting for twelve doors in the temple</item>
+        <item>Besides two Shivalingams and two Naandi statutes at the entrance. </item>
+        <item>One of the two lingams is the 'Chaturmukha Lingam', a four-faced Shiva lingam, which is the speciality of the temple</item>
+        <item></item>
+    </string-array>
+    <string-array name="exp_chennamma">
+        <item>
+            Bearing witness to the glorious past, the Kittur Rani Channamma Circle is key landmark of Hubli. Popularly known as Traffic I-Land, this spot attracts many travelers owing to the imposing statue of Rani Channamma erected right at the city center. Scores of visitors flock to this circle at all hours of the day to pay their homage to the great queen, making it the busiest junction in town. Step into the famous Idgah Maidan situated adjacent to the circle and catch a glimpse of its verdant surroundings. Do not forget to try the famous Dharwad Peda which is available at restaurants and food stalls lining the narrow streets of this bustling locality.
+            Historical Context: This area is named after the brave warrior, Rani Channamma, who single-handedly fought against the British. </item>
+        <item></item>
+        <item>The Divine Warrior Female Forces</item>
+    </string-array>
 
-        albeit of the Cashew Factory
+    <string-array name="exp_durgadbail">
+        <item>Our Very Own Diagon Alley</item>
+    </string-array>
 
-        Buy the assured ticket
+    <string-array name="exp_hangal">
+        <item>The voice that lifted countless hearts</item>
+    </string-array>
 
-        To witness and have Hands-on experience
+    <string-array name="exp_kletech">
+        <item>Where Science Meets Art aka The Prestige</item>
+    </string-array>
 
-        of the Ins and Outs of
+    <string-array name="exp_matha">
+        <item>Meditate amidst the serene setting of Siddharudha Matha</item>
+    </string-array>
 
-        The Cashew Factory
+    <string-array name="exp_unkal">
+        <item>Take joy boat ride in the calm waters of Unkal Lake</item>
+    </string-array>
 
+    <string-array name="exp_utsavrock">
+        <item>Be amazed at the magic of handcrafted rock artifacts</item>
+    </string-array>
 
-        ### Extra Benefits
+    <string-array name="exp_glasshouse">
+        <item>Be amazed at the magic of handcrafted rock artifacts</item>
+    </string-array>
 
-        * Get Rs. 50 off of products worth Rs. 500 of the best quality cashewnuts
+    <string-array name="part_silvercult">
+        <item>What do i get here ?</item>
+        <item>handcrafted silver ornaments</item>
+        <item>for the diva in you</item>
+        <item>Hello ?</item>
+        <item>Contact Number : +91 97426 92799</item>
+        <item>Where is It ?</item>
+        <item>Hubballi</item>
+        <item>Whose There ?</item>
+        <item>Chandni Kothari</item>
+    </string-array>
 
-        * Additional 10% off on The Cashew Factory Experience Tour
+    <string-array name="part_cashewfactory">
+        <item>What do i get ?</item>
+        <item>Remember Charlie and the Chocolate Factory</item>
+        <item>Now everyone can be Charlie
 
-        ### Where to Find It :
+            albeit of the Cashew Factory</item>
+        <item>Witness and have Hands-on experience
 
-        * R-25, M T Sagar, Gokul Road Industrial Estate, near Tatwadarsha Hospital, Hubballi - 580030
+            of the Ins and Outs of
 
-        ### Hello ?
+            The Cashew Factory</item>
+        <item>Extra Benefits</item>
+        <item>Get Rs. 50 off of products worth Rs. 500 of the best quality cashewnuts</item>
+        <item>Additional 10% off on The Cashew Factory Experience Tour</item>
+        <item>Where to Find It?</item>
+        <item>R-25, M T Sagar, Gokul Road Industrial Estate, near Tatwadarsha Hospital, Hubballi - 580030</item>
+        <item>Hello ?</item>
+        <item>Contact Number : +91 9008 810 653</item>
+        <item>Whose There ?</item>
+        <item>Ashish Bohara</item>
+    </string-array>
+    <string-array name="part_chimney">
+<!--        The Special dish
 
-        * Contact Number : +91 9008 810 653
+        Prawns on my leaf
 
-        ### Whose There ?
-        * Ashish Bohara
-
-
-
-        [Buy the Limited Edition discount voucher](https://ti.to/the-hd-tour/hd-limited-edition-march)
-    </string>
-    <string name="part_chimney">
-        #### The Special dish
-
-        * ##### Prawns on my leaf
-
-        ##### Evergreen Dishes
+        Evergreen Dishes
 
         *  Andhra Dum Biryani
 
         * Mutton Biryani
 
         * Prawns and fish
+-->
+        <item>Veg and NonVeg Meals</item>
+        <item>on Banana leaves. Original and authentic indian cutlery</item>
+        <item>U will stop eating in plates ever again</item>
+        <item> Where to Find It ?</item>
+        <item>Shop no 1 and 2, Upper ground floor, Marvel Signet, Shirur Park, Vidyanagar
+            580031 Hubli</item>
+        <item>Hello ?</item>
+        <item>Contact Number : +91 836 426 0606</item>
+        <item>Whose There ?</item>
+        <item>Jaysheel Balmi</item>
+        <item>They mix vessels ?</item>
+        <item>The Veg and Non-Veg delicacies are created in separate kitchens.</item>
+        <item>Compliant to Halal-Cut to cater to the diverse audience.</item>
+    </string-array>
+    <string-array name="part_vitrag">
+        <item>What do i get here?</item>
+        <item>handcrafted gold necklace and gold items of pure art</item>
+        <item>Hello ?</item>
+        <item>Contact Number : +91 9916 503 653</item>
+        <item>Where is It ?</item>
+        <item>Vitrag Gold , Kubsad galli, near nagreshwar temple, Hubli-580028</item>
+        <item>Whom Should i Talk to</item>
+        <item>Mayur Kothari</item>
+    </string-array>
 
-        * Veg Meals
-
-        * NonVeg Meals
-
-        #### fork / Spoon ?
-
-        #####  on Banana leaves. Original and authentic indian cutlery
-
-        *  U will stop eating in plates ever again
-
-
-        ### Where to Find It :
-
-        * Shop no 1 and 2, Upper ground floor, Marvel Signet, Shirur Park, Vidyanagar
-        580031 Hubli
-
-        ### Hello ?
-
-        * Contact Number : +91 836 426 0606
-
-        ### Whose There ?
-        * Jaysheel Balmi
-
-        ### They mix vessels ?
-
-        * The Veg and Non-Veg delicacies are created in separate kitchens.
-
-        * Compliant to Halal-Cut to cater to the diverse audience.
-
-        [Buy the Limited Edition discount voucher](https://ti.to/the-hd-tour/hd-limited-edition-march)
-    </string>
-    <string name="part_silvercult">
-        ### What do i get here ?
-
-        handcrafted silver ornaments
-
-        for the diva in you
-
-        ### Hello ?
-
-        * Contact Number : +91 97426 92799
-
-        ### Where is It ?
-
-        * Hubballi
-
-
-        ### Whose There ?
-        * Chandni Kothari
-
-        [Buy the Limited discount voucher](https://ti.to/the-hd-tour/hd-limited-edition-march)
-    </string>
-    <string name="part_vitrag">### What do i get here ?
-
-        handcrafted gold necklace and gold items of pure art
-
-        ### Hello ?
-
-        * Contact Number : +91 9916 503 653
-
-        ### Where is It ?
-        * Vitrag Gold , Kubsad galli, near nagreshwar temple, Hubli-580028
-
-
-        ### Whom Should i Talk to
-        * Mayur Kothari
-
-        [Buy the Limited discount voucher](https://ti.to/the-hd-tour/hd-limited-edition-march)
-    </string>
 </resources>
