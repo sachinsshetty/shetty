@@ -12,7 +12,7 @@ public class ImageAdapter extends BaseAdapter {
 
     // Keep all Images in array
     public Integer[] mThumbIds = {
-            R.drawable.icon, R.drawable.icon2
+            R.drawable.hdtour_logo
     };
 
     // Constructor
