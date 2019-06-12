@@ -1,0 +1,3053 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permission>
+  <per>READ_CALENDAR: "android.permission.READ_CALENDAR"</per>
+  <per>WRITE_CALENDAR: "android.permission.WRITE_CALENDAR"</per>
+  <per>CAMERA: "android.permission.CAMERA</per>
+  <per>READ_CONTACTS: "android.permission.READ_CONTACTS"</per>
+  <per>WRITE_CONTACTS: "android.permission.WRITE_CONTACTS"</per>
+  <per>GET_ACCOUNTS: "android.permission.GET_ACCOUNTS"</per>
+  <per>WRITE_EXTERNAL_STORAGE: "android.permission.WRITE_EXTERNAL_STORAGE"</per>
+  <per>READ_EXTERNAL_STORAGE: "android.permission.READ_EXTERNAL_STORAGE"</per>
+  <per>RECEIVE_MMS: "android.permission.RECEIVE_MMS"</per>
+  <per>RECEIVE_WAP_PUSH: "android.permission.RECEIVE_WAP_PUSH"</per>
+  <per>READ_SMS: "android.permission.READ_SMS"</per>
+  <per>RECEIVE_SMS: "android.permission.RECEIVE_SMS"</per>
+  <per>SEND_SMS: "android.permission.SEND_SMS"</per>
+  <per>BODY_SENSORS: "android.permission.BODY_SENSORS"</per>
+  <per>PROCESS_OUTGOING_CALLS: "android.permission.PROCESS_OUTGOING_CALLS"</per>
+  <per>USE_SIP: "android.permission.USE_SIP"</per>
+  <per>ADD_VOICEMAIL: "com.android.voicemail.permission.ADD_VOICEMAIL"</per>
+  <per>WRITE_CALL_LOG: "android.permission.WRITE_CALL_LOG"</per>
+  <per>READ_CALL_LOG: "android.permission.READ_CALL_LOG"</per>
+  <per>CALL_PHONE: "android.permission.CALL_PHONE"</per>
+  <per>READ_PHONE_STATE: "android.permission.READ_PHONE_STATE"</per>
+  <per>RECORD_AUDIO: "android.permission.RECORD_AUDIO"</per>
+  <per>ACCESS_COARSE_LOCATION: "android.permission.ACCESS_COARSE_LOCATION"</per>
+  <per>ACCESS_FINE_LOCATION: "android.permission.ACCESS_FINE_LOCATION"</per>
+  </permission>
+
+<apidata>
+  <data>A.BASE_URL = "https://hubli.lit-transit.com/tms/rest/api/v1/siri/"</data>
+  <data>A.AUTHORIZATION = "Authorization"</data>
+  <data>A.APIKEY = "ApiKey bf26959f0b704b1cafb7e0b42e1ae0ec"</data>
+  <data>A.BASE_URL_POST = "https://www.hdbrts.com:8082/"</data>
+  <data>A.CONTENT_TYPE = "Content-Type"</data>
+  <data>A.CONTENT_TYPE_KEY = "application/x-www-form-urlencoded"</data>
+  <data>A.CONTENT_TYPE_JSON = "application/json"</data>
+  <data>A.APIKEY_POST = "null"</data>
+  <data>A.GENERATE_OTP_URL = "api/AppUser/GenerateOTP?mobileNumber="</data>
+  <data>A.TIME_TABLE_API_PATH_ROUTE = "api/RouteTimeTable/"</data>
+  <data>A.TIME_TABLE_API_PATH_BUS_ON_ROUTE = "api/BusesOnRoute/"</data>
+  <data>A.TIME_TABLE_API_STOPS_ON_ROUTE = "api/StopsOnRoute/"</data>
+  <data>A.PLACES_OF_ARRRACTIONS = "api/PlacesOfAttraction"</data>
+  <data>A.FEEDBACK_API = "api/Feedback/AddFeedback"</data>
+  <data>A.STOPE_CODE = "&amp;stopcode="</data>
+
+  <data>A.SIRI_SM = "api/AVLS/sm?routecode=&amp;start_datetime=&amp;end_datetime=&amp;stopname="</data>
+  <data>A.ETA_STOP_API_WITH_LOCATION = "api/StopPosition"</data>
+  <data>A.ETA_STOP_API = "api/StopsOnRoute?stopName="</data>
+  <data>A.SCHEDULE_FOR_ROUTE_CODE = "&amp;scheduleForRouteCode="</data>
+  <data>A.PAGE = "&amp;Page="</data>
+  <data>A.ROUTE_CODE = "&amp;routeCode="</data>
+  <data>A.ROWS = "?Rows="</data>
+  <data>A.ROUTE_STRINGELSE = "&amp;Rows=25&amp;Page=0"</data>
+  <data>A.DETACH_CARD_API_PATH = "api/AFCS/DeregisterEndUser"</data>
+  <data>A.ATTACH_CARD_API_PATH = "api/AFCS/RegisterCard"</data>
+
+  <data>A.ADD_TOP_UP_API_PATH = "api/AFCS/DoTopUp"</data>
+  <data>A.TRANSACTION_HISTORY_API_PATH = "api/AppUser/GetTopUpTransactions"</data>
+  <data>A.ROUTE_DIAGRAM_STOPS_ON_ROUTE_API_PATH = "api/FareMatrix/StopsOnRoute?RouteCode="</data>
+  <data>A.ROUTE_DIAGRAM_API_PATH = "api/Planning/RouteFlowDiagram"</data>
+  <data>A.ROUTE_STRING = "/api/StopsOnRoute?routeName="</data>
+
+  <data>A.REGISTER_USER_SUCESS = "register_user_sucess"</data>
+  <data>A.LOGIN_USER_FAIL = "LOGIN_USER_FAIL"</data>
+  <data>A.LOGIN_USER_SUCESS = "login_user_sucess"</data>
+  <data>A.USER_ID_CHANGE = "user_id_change"</data>
+  <data>A.PASSWORD_CHANGE = "password_change"</data>
+  <data>A.LOGIN_USING_OTP = "login_Using_OTP"</data>
+  <data>A.GENERATE_OTP = "generate_OTP"</data>
+  <data>A.EMAIL_CHANGE = "email_change"</data>
+  <data>A.JOURNEY_PLANNER = "api/Planning/GetBusJourneyPlan"</data>
+
+  <data>A.NEW_PASSWORD = "new_password"</data>
+  <data>A.EXISTING_PASSWORD = "existing_password"</data>
+  <data>A.VALIDATE_EMAIL_ID = "validate_email_id"</data>
+  <data>A.VALIDATE_MOBILE_NUMBER = "validate_mobile_number"</data>
+  <data>A.FETCHING_DATA_SUCESS = "fetching_Data_sucess"</data>
+  <data>A.FETCHING_DATAETD = "fetching_Data_etd"</data>
+  <data>A.FETCHING_DATA = "fetching_Data"</data>
+  <data>A.GETTING_MONITORED_STOP_VISIT_RESPONSE = "monitoredStopVisit"</data>
+  <data>A.GETTING_JSON_RESPONSE = "json_resp"</data>
+
+
+  <data>A.TIME_TABLE_ROUTE_LIST = "time_table_route_list"</data>
+  <data>A.PLACES_OF_ATTRACTION = "places_of_attraction"</data>
+  <data>A.CONTACT_DETAILS = "contact_name_details"</data>
+  <data>A.ETA_STOP_LIST_FOR_MAP = "eta_stop_list_for_map"</data>
+  <data>A.ETA_ERROR = "eta_error"</data>
+  <data>A.ETA_FETCHDATA_SUCESS = "eta_fetch_data_sucess"</data>
+  <data>A.ETA_ALL_STOP = "eta_all_stop"</data>
+  <data>A.ETA_BUS_DETAILS = "eta_bus_details"</data>
+  <data>A.ETA_STOP_DETAILS = "eta_stop_details"</data>
+
+
+  <data>A.ETA_GETROUTE_DETAILS = "eta_route_details"</data>
+  <data>A.ORIGIN_REF = "origin_ref"</data>
+  <data>A.FETCHING_DATA_PLN = "fetching_Data_pln"</data>
+  <data>A.FETCHING_DATAETA = "fetching_Data_Eta"</data>
+  <data>A.REGISTER_FETCHING_DATA_SUCESS = "regiater_fetching_data_sucess"</data>
+  <data>A.REGISTER_FETCHING_DATA = "regiater_fetching_data"</data>
+  <data>A.PLAN_ERROR = "plan_error"</data>
+  <data>A.PLAN_FETCHING_DATA_SUCESS = "plan_fetching_data_sucess"</data>
+  <data>A.PLAN_FETCHING_DATA = "plan_fetching_data"</data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+  <data></data>
+
+</apidata>
+
+A.TIME_TABLE_BUS_LIST = "time_table_bus_list"
+
+, A.TIME_TABLE_STOP_LIST = "time_stop_list", A.TIME_TABLE_ERROR = "time_table_error", A.DASHBOARD_TOKEN = "dashboard_token", A.SEARCH_ROUTE_LIST = "search_route_list", A.FARECHART_SEARCH_ROUTE_LIST = "fareChart_search_route_list", A.SEARCH_ROUTE_LIST_ETA = "search_route_list_eta", A.SEARCH_LOADING = "search_loading", A.PA_SEARCH = "pa_search", A.PA_SEARCH_SUCESS = "pa_search_sucess", A.PA_SEARCH_ERROR = "pa_search_error", A.UPDATES = "updates", A.NO_RESULT_FOUND = "no_result_found", A.ETD_GETROUTE_DETAILS = "etd_route_details", A.ETD_STOP_DETAILS = "etd_stop_details", A.ETD_BUS_DETAILS = "etd_bus_details", A.ETD_ALL_STOP = "etd_all_stop", A.ETD_FETCHDATA_SUCESS = "etd_fetch_data_sucess", A.ETD_ERROR = "etd_error", A.GET_PLAN_ROUTEDETAIL_LIST = "get_plan_routedetail_list", A.GET_PLAN_STOPLIST = "get_plan_stoplist", A.FEEDBACK_SUBMIT_RESPONSE = "feedback_submeer_response", A.FEEDBACK_FETCHING_DATA = "feedback_fetching_data", A.FEEDBACK_FETCHING_SUCESS = "feedback_fetching_sucess", A.FEEDBACK_ERROR = "feedback_error", A.ON_FULL_NAME_CHANGE = "full_name_change", A.ON_PHONE_CHANGE = "on_phone_change", A.ON_EMAIL_CHANGE = "on_email_change", A.ON_COMMENT_CHANGE = "on_comment_change", A.GRIEVANCES = "grivances", A.PROFILE = "profile", A.RECHARGE = "recharge", A.USER_DETAILS = "user_details", A.USER_NAME_REDUCER = "user_name_reducer", A.USER_NAME_CHECK = "user_name_check", A.USER_EMAIL_CHECK = "user_Email_check", A.USER_IMAGE_CHECK = "user_image_check", A.GRIEVANCE_SUBMIT_RESPONSE = "grievance_Submit_Response", A.FETCHING_GRIVANCE_DATA = "grievance_Submit_DATA", A.FETCHING_GRIVANCE_DATA_SUCESS = "grievance_Submit_DATA_SUCESS", A.GRIVANCE_DATA_ERROR = "grievance__data_error", A.FETCHING_USER_DETAILS = "grievanceuser_details", A.GRIEVANCES_API = "api/Grievance", A.GETGRIEVANCES_API = "api/Grievance?Userid=&Page=0&Rows=4", A.SUBMITGRIEVANCES_API = "api/Grievance?Page=0&Rows=4", A.GET_GRIEVANCE_DETAILS = "get_Grievance_Details", A.SET_IS_CONNECTED = "set_is_connected", A.GET_FARECHART_LIST = "get_fareChart_list", A.GET_FARE = "get_fareCist", A.FILTERED_LIST = "filter_list", A.FARECHART_STOPS_API = "api/FareMatrix/Stops", A.FARECHART_STOPS_ON_ROUTE_API = "api/FareMatrix/StopsOnRoute?RouteCode=", A.FARECHART_STOPS = "farechart_stops", A.FARECHART_ROUTE_SET = "farechart_route_set", A.FARECHART_STOP1_SET = "farechart_stop1_set", A.FARECHART_STOP2_SET = "farechart_stop2_set", A.FARECHART_STOP_ONE_OBJECT = "farechart_stop_one_object", A.FARECHART_STOP_TWO_OBJECT = "farechart_stop_two_object", A.GET_FARE_AMOUNT = "api/FareMatrix/Fare?From=", A.REGISTER_CARD = "api/AFCS/RegisterCard", A.GETUSER_DTAILS_API = "api/AppUser/GetUser", A.REGISTER_USER_DTAILS_API = "api/AppUser/AddUser", A.UPDATE_USER_DTAILS_API = "api/AppUser/UpdateUser", A.GET_MY_CARDS = "api/AppUser/GetMyCards", A.VALIDATE_MOBILE = "api/Validation/CheckMobile?Mobile=", A.VALIDATE_EMAIL = "api/Validation/CheckEmail?Email=", A.RESET_PASSWORD = "/api/AppUser/ResetPassword", A.FORGOT_PASSWORD_API = "/api/AppUser/ForgotPassword", A.FORGOT_PASSWORD_EMAIL_CHANGE = "forgot_password_email_change", A.FORGOT_PASSWORD_MOBILE_NUMBER_CHANGE = "forgot_password_phone_number_change", A.FARECHAT_GET_STOP = "api/Farematrix/Stops", A.FARECHAT_GET_FARE = "api/Farematrix/Fare", A.STOP_FEV_LIST = "api/Favorite", A.FARECHAT_FROM = "?From=", A.FARECHAT_TO = "&To=", A.FARECHAT_FETCH = "fare_chart_fetch", A.FARECHAT_FETCH_SUCESS = "fare_chart_fetch_sucess", A.FARECHAT_ERROR = "fare_chat_error", A.USER_DETAILS_SUBMIT_RESPONSE = "user_details_submit_response", A.USER_DETAILS_FETCHING_DATA = "user_details_fetching_data", A.USER_DETAILS_FETCHING_SUCESS = "user_details_fetching_success", A.USER_DETAILS_ERROR = "user_details_error", A.ON_USER_DETAILS_FIRST_NAME_CHANGE = "on_user_details_first_name_change", A.ON_USER_DETAILS_LAST_NAME_CHANGE = "on_user_details_last_name_change", A.ON_USER_DETAILS_EMAIL_CHANGE = "on_user_details_email_change", A.ON_USER_DETAILS_PHONE_CHANGE = "on_user_details_phone_change", A.ON_USER_DETAILS_ADDRESS_CHANGE = "on_user_details_address_change", A.ON_USER_DETAILS_PHOTO_CHANGE = "on_user_details_photo_change", A.ON_USER_PASSWORD_CHANGE = "Oon_user_password_change", A.ON_USER_RE_ENTER_PASSWORD_CHANGE = "Oon_user_re_password_change", A.ON_USER_PROFILE_CHANGE = "on_user_profile_change", A.LINE_STRING = "line_string", A.ANIMATION_TYPE = "bounceInRight", A.USER_DETAILS_ITEM = "user_details_item", A.GET_FEV_LIST = "fev_lists", A.DEMO_TABLE = "ListTable", A.TOKEN_TABLE = "tokeTable", A.NAME_CHANGE = "name_change", A.CONTACT_ONE_CHANGE = "contact_one_change", A.CONTACT_TWO_CHANGE = "contact_two_change", A.SOS_DETAILS_FETCHING_DATA = "sos_details_fetching_data", A.SOS_DETAILS_FETCHING_SUCESS = "sos_details_fetching_success", A.ROUTE_DIAGRAM_ROUTE_LIST = "route_diagram_route_list", A.ROUTE_DIAGRAM_LOADER = "route_diagram_loader", A.ROUTE_DIAGRAM_MAP_LOADER = "route_diagram_map_loader", A.ROUTE_DIAGRAM_STOPS_ON_ROUTE_LIST = "route_diagram_stops_on_route_list", A.ROUTE_DIAGRAM_STOPS_ON_ROUTE_POSITION = "route_diagram_stops_on_route_position", A.TRANSACTION_HISTORY_LOADER = "transaction_history_loader", A.TRANSACTION_HISTORY_LIST = "transaction_history_list", A.TRANSACTION_HISTORY_LIST_FOOTER_LOADER = "transaction_history_list_footer_loader", A.ADD_TOPUP_LOADER = "add_topup_loader", A.ADD_TOPUP__FORM_RESPONSE = "add_topup_form_response", A.params = {
+        grant_type: "password",
+        username: "MApiUser",
+        password: "tttttt"
+    }
+}, 344);
+__d(function(e, r, a, t) {
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var s = r(344),
+        l = {
+            eatStopListForMap: [],
+            errorIs: !1,
+            loadingEta: !1,
+            routeDetails: [],
+            stpDetailsList: [],
+            busDetailsList: [],
+            stopList: [],
+            lineString: [],
+            searchRouteList: [],
+            nearestStpDetailsList: []
+        };
+    t.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
+            r = arguments[1];
+        switch (r.type) {
+            case s.ETA_GETROUTE_DETAILS:
+                return babelHelpers.extends({}, e, {
+                    routeDetails: r.payload,
+                    loadingEta: !1,
+                    errorIs: !1
+                });
+            case s.FETCHING_DATAETA:
+                return babelHelpers.extends({}, e, {
+                    loadingEta: !0,
+                    errorIs: !1
+                });
+            case s.ETA_STOP_DETAILS:
+                return babelHelpers.extends({}, e, {
+                    nearestStpDetailsList: r.payload,
+                    loadingEta: !1,
+                    errorIs: !1
+                });
+            case s.ETA_BUS_DETAILS:
+                return babelHelpers.extends({}, e, {
+                    busDetailsList: r.payload,
+                    loadingEta: !1,
+                    errorIs: !1
+                });
+            case s.ETA_ALL_STOP:
+                return babelHelpers.extends({}, e, {
+                    stopList: r.payload,
+                    loadingEta: !1,
+                    errorIs: !1
+                });
+            case s.ETA_FETCHDATA_SUCESS:
+                return babelHelpers.extends({}, e, {
+                    loadingEta: !1,
+                    errorIs: !1
+                });
+            case s.ETA_ERROR:
+                return babelHelpers.extends({}, e, {
+                    errorIs: !0,
+                    loadingEta: !1
+                });
+            case s.ETA_STOP_LIST_FOR_MAP:
+                return babelHelpers.extends({}, e, {
+                    eatStopListForMap: r.payload,
+                    loadingEta: !1,
+                    errorIs: !1
+                });
+            case s.FETCHING_DATA_SUCESS:
+                return babelHelpers.extends({}, e, {
+                    errorIs: !1,
+                    loadingEta: !1
+                });
+            case s.LINE_STRING:
+                return babelHelpers.extends({}, e, {
+                    lineString: r.payload,
+                    errorIs: !1,
+                    loadingEta: !1
+                });
+            case s.SEARCH_ROUTE_LIST_ETA:
+                return babelHelpers.extends({}, e, {
+                    searchRouteList: r.payload,
+                    errorIs: !1,
+                    loadingEta: !1
+                });
+            default:
+                return e
+        }
+    }
+}, 345);
+__d(function(e, t, r, s) {
+    Object.defineProperty(s, "__esModule", {
+        value: !0
+    });
+    var a = t(344),
+        d = {
+            etdStopListForMap: [],
+            errorEtdIs: !1,
+            loading: !1,
+            routeDetails: [],
+            stpDetailsList: [],
+            busDetailsList: [],
+            stopList: []
+        };
+    s.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
+            t = arguments[1];
+        switch (t.type) {
+            case a.ETD_GETROUTE_DETAILS:
+                return babelHelpers.extends({}, e, {
+                    routeDetails: t.payload,
+                    loadingEtd: !1,
+                    errorEtdIs: !1
+                });
+            case a.FETCHING_DATAETD:
+                return babelHelpers.extends({}, e, {
+                    loadingEtd: !0,
+                    errorEtdIs: !1
+                });
+            case a.ETD_STOP_DETAILS:
+                return babelHelpers.extends({}, e, {
+                    stpDetailsList: t.payload,
+                    loadingEtd: !1,
+                    errorEtdIs: !1
+                });
+            case a.ETD_BUS_DETAILS:
+                return babelHelpers.extends({}, e, {
+                    busDetailsList: t.payload,
+                    loadingEtd: !1,
+                    errorEtdIs: !1
+                });
+            case a.ETD_ALL_STOP:
+                return babelHelpers.extends({}, e, {
+                    stopList: t.payload,
+                    loading: !1,
+                    loadingEtd: !1,
+                    errorEtdIs: !1
+                });
+            case a.ETD_FETCHDATA_SUCESS:
+                return babelHelpers.extends({}, e, {
+                    loadingEtd: !1,
+                    errorEtdIs: !1
+                });
+            case a.ETD_ERROR:
+                return babelHelpers.extends({}, e, {
+                    errorEtdIs: !0
+                });
+            case a.ETA_STOP_LIST_FOR_MAP:
+                return babelHelpers.extends({}, e, {
+                    etdStopListForMap: t.payload,
+                    loadingEtd: !1,
+                    errorEtdIs: !1
+                });
+            default:
+                return e
+        }
+    }
+},
+
+
+        l = {
+            errorMsg: !1,
+            loadingTimeTable: !1,
+            loadingSearch: !1,
+            routeList: [],
+            busListForRoute: [],
+            stopList: [],
+            searchRouteList: [],
+            isNoResultFound: !1
+        };
+    o.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
+            r = arguments[1];
+        switch (r.type) {
+            case a.TIME_TABLE_ROUTE_LIST:
+                return babelHelpers.extends({}, e, {
+                    routeList: r.payload,
+                    loadingTimeTable: !1,
+                    isNoResultFound: !1,
+                    errorMsg: !1
+                });
+            case a.TIME_TABLE_BUS_LIST:
+                return babelHelpers.extends({}, e, {
+                    busListForRoute: r.payload,
+                    loadingTimeTable: !1,
+                    isNoResultFound: !1,
+                    errorMsg: !1
+                });
+            case a.TIME_TABLE_STOP_LIST:
+                return babelHelpers.extends({}, e, {
+                    stopList: r.payload,
+                    loadingTimeTable: !1,
+                    isNoResultFound: !1,
+                    errorMsg: !1
+                });
+            case a.FETCHING_DATA:
+                return babelHelpers.extends({}, e, {
+                    loadingTimeTable: !0,
+                    isNoResultFound: !1,
+                    errorMsg: !1
+                });
+            case a.SEARCH_LOADING:
+                return babelHelpers.extends({}, e, {
+                    loadingSearch: !0,
+                    isNoResultFound: !1,
+                    errorMsg: !1
+                });
+            case a.SEARCH_ROUTE_LIST:
+                return babelHelpers.extends({}, e, {
+                    loadingTimeTable: !1,
+                    searchRouteList: r.payload,
+                    loadingSearch: !1,
+                    isNoResultFound: !1,
+                    errorMsg: !1
+                });
+            case a.NO_RESULT_FOUND:
+                return babelHelpers.extends({}, e, {
+                    loadingTimeTable: !1,
+                    isNoResultFound: !0,
+                    errorMsg: !1
+                });
+            case a.FETCHING_DATA_SUCESS:
+                return babelHelpers.extends({}, e, {
+                    loadingSearch: !1,
+                    isNoResultFound: !1,
+                    loadingTimeTable: !1,
+                    errorMsg: !1
+                });
+            case a.TIME_TABLE_ERROR:
+                return babelHelpers.extends({}, e, {
+                    errorMsg: !0
+                });
+            default:
+                return e
+        }
+    }
+}, 348);
+__d(function(e, n, t, a) {
+    Object.defineProperty(a, "__esModule", {
+        value: !0
+    });
+    var l = n(344),
+        d = {
+            loading: !1,
+            token: " "
+        };
+    a.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
+            n = arguments[1];
+        switch (n.type) {
+            case l.DASHBOARD_TOKEN:
+                return babelHelpers.extends({}, e, {
+                    token: n.payload,
+                    loading: !1
+                });
+            case l.FETCHING_DATA:
+                return babelHelpers.extends({}, e, {
+                    loading: !0
+                });
+            default:
+                return e
+        }
+    }
+}, 349);
+__d(function(e, t, a, n) {
+    Object.defineProperty(n, "__esModule", {
+        value: !0
+    });
+    var l = t(344),
+        d = {
+            loading: !1,
+            contactDetails: []
+        };
+    n.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
+            t = arguments[1];
+        switch (t.type) {
+            case l.CONTACT_DETAILS:
+                return babelHelpers.extends({}, e, {
+                    contactDetails: t.payload,
+                    loading: !1
+                });
+            default:
+                return e
+        }
+    }
+}, 350);
+__d(function(e, r, a, t) {
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var n = r(344),
+        l = {
+            paError: !1,
+            loadingPa: !1,
+            placesofAttraction: []
+        };
+    t.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
+            r = arguments[1];
+        switch (r.type) {
+            case n.PLACES_OF_ATTRACTION:
+                return babelHelpers.extends({}, e, {
+                    placesofAttraction: r.payload,
+                    loadingPa: !1,
+                    paError: !1
+                });
+            case n.PA_SEARCH:
+                return babelHelpers.extends({}, e, {
+                    loadingPa: !0,
+                    paError: !1
+                });
+            case n.PA_SEARCH_SUCESS:
+                return babelHelpers.extends({}, e, {
+                    loadingPa: !1,
+                    paError: !1
+                });
+            case n.PA_SEARCH_ERROR:
+                return babelHelpers.extends({}, e, {
+                    paError: !0
+                });
+            default:
+                return e
+        }
+    }
+}, 351);
+__d(function(e, t, a, d) {
+    Object.defineProperty(d, "__esModule", {
+        value: !0
+    });
+    var n = t(344),
+        l = {
+            loading: !1,
+            updatesList: []
+        };
+    d.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
+            t = arguments[1];
+        switch (t.type) {
+            case n.UPDATES:
+                return babelHelpers.extends({}, e, {
+                    updatesList: t.payload,
+                    loading: !1
+                });
+            default:
+                return e
+        }
+    }
+}, 352);
+__d(function(a, e, l, n) {
+    Object.defineProperty(n, "__esModule", {
+        value: !0
+    });
+    var r = e(344),
+        t = {
+            loadingPlan: !1,
+            loadingPlans: !1,
+            getPlanStopList: [],
+            getPlanRouteDetailList: [],
+            planError: !1
+        };
+    n.default = function() {
+        var a = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : t,
+            e = arguments[1];
+        switch (e.type) {
+            case r.GET_PLAN_STOPLIST:
+                return babelHelpers.extends({}, a, {
+                    getPlanStopList: e.payload,
+                    loadingPlan: !1,
+                    loadingPlans: !1,
+                    planError: !1
+                });
+            case r.GET_PLAN_ROUTEDETAIL_LIST:
+                return babelHelpers.extends({}, a, {
+                    getPlanRouteDetailList: e.payload,
+                    loadingPlan: !1,
+                    loadingPlans: !1,
+                    planError: !1
+                });
+            case r.PLAN_FETCHING_DATA:
+                return babelHelpers.extends({}, a, {
+                    loadingPlan: !0,
+                    loadingPlans: !1,
+                    planError: !1
+                });
+            case r.FETCHING_DATA_PLN:
+                return babelHelpers.extends({}, a, {
+                    loadingPlan: !0,
+                    loadingPlans: !1,
+                    planError: !1
+                });
+            case r.PLAN_ERROR:
+                return babelHelpers.extends({}, a, {
+                    planError: !0,
+                    loadingPlan: !1,
+                    loadingPlans: !1
+                });
+            case r.PLAN_FETCHING_DATA_SUCESS:
+                return babelHelpers.extends({}, a, {
+                    loadingPlan: !1,
+                    loadingPlans: !1,
+                    planError: !1
+                });
+            default:
+                return a
+        }
+    }
+}, 353);
+__d(function(e, r, a, t) {
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var l = r(344),
+        o = {
+            loadingFC: !1,
+            getfareList: [],
+            fareError: !1,
+            fareIs: {},
+            filteredList: [],
+            farechartStopList: [],
+            fareStop1: "",
+            fareStop2: "",
+            fareRoute: [],
+            searchRouteList: [],
+            fareAmount: {
+                From: "",
+                Price: "",
+                RiderType: "",
+                Route: "",
+                To: "",
+                fare_chart_stop_one_object: {},
+                fare_chart_stop_two_object: {}
+            }
+        };
+    t.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
+            r = arguments[1];
+        switch (r.type) {
+            case l.FETCHING_DATA:
+                return babelHelpers.extends({}, e, {
+                    loadingFC: !0,
+                    getfareList: [],
+                    fareError: !1,
+                    filteredList: []
+                });
+            case l.GET_FARECHART_LIST:
+                return babelHelpers.extends({}, e, {
+                    getfareList: r.payload,
+                    loadingFC: !1,
+                    fareError: !1
+                });
+            case l.FARECHAT_FETCH_SUCESS:
+                return babelHelpers.extends({}, e, {
+                    loadingFC: !1,
+                    fareError: !1
+                });
+            case l.FARECHAT_ERROR:
+                return babelHelpers.extends({}, e, {
+                    fareError: !0,
+                    loadingFC: !1
+                });
+            case l.GET_FARE:
+                return babelHelpers.extends({}, e, {
+                    fareIs: r.payload,
+                    loadingFC: !1
+                });
+            case l.FILTERED_LIST:
+                return babelHelpers.extends({}, e, {
+                    filteredList: r.payload,
+                    loadingFC: !1
+                });
+            case l.FARECHART_ROUTE_SET:
+                return babelHelpers.extends({}, e, {
+                    fareRoute: r.payload,
+                    loadingFC: !1
+                });
+            case l.FARECHART_STOP1_SET:
+                return babelHelpers.extends({}, e, {
+                    fareStop1: r.payload,
+                    loadingFC: !1
+                });
+            case l.FARECHART_STOP2_SET:
+                return babelHelpers.extends({}, e, {
+                    fareStop2: r.payload,
+                    loadingFC: !1
+                });
+            case l.FARECHART_STOPS:
+                return babelHelpers.extends({}, e, {
+                    farechartStopList: r.payload,
+                    loadingFC: !1
+                });
+            case l.FARECHART_SEARCH_ROUTE_LIST:
+                return babelHelpers.extends({}, e, {
+                    searchRouteList: r.payload,
+                    loadingFC: !1
+                });
+            case "clearFilterData":
+                return babelHelpers.extends({}, e, {
+                    filteredList: r.payload,
+                    loadingFC: !1
+                });
+            case "fareAmount":
+                return babelHelpers.extends({}, e, {
+                    fareAmount: r.payload,
+                    loadingFC: !1
+                });
+            case "clearReducerData":
+                return babelHelpers.extends({}, e, {
+                    filteredList: [],
+                    fareRoute: [],
+                    loadingFC: !1,
+                    fareAmount: {
+                        From: "",
+                        Price: "",
+                        RiderType: "",
+                        Route: "",
+                        To: ""
+                    },
+                    fareStop1: "",
+                    fareStop2: ""
+                });
+            case l.FARECHART_STOP_ONE_OBJECT:
+                return babelHelpers.extends({}, e, {
+                    fare_chart_stop_one_object: r.payload
+                });
+            case l.FARECHART_STOP_TWO_OBJECT:
+                return babelHelpers.extends({}, e, {
+                    fare_chart_stop_two_object: r.payload
+                });
+            default:
+                return e
+        }
+    }
+}, 354);
+__d(function(e, a, r, t) {
+    Object.defineProperty(t, "__esModule", {
+        value: !0
+    });
+    var s = a(344),
+        n = {
+            name: "",
+            contactOne: "",
+            contactTwo: "",
+            errorUserDetails: !1,
+            loadingUserDetails: !1
+        };
+    t.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : n,
+            a = arguments[1];
+        switch (a.type) {
+            case s.NAME_CHANGE:
+                return babelHelpers.extends({}, e, {
+                    name: a.payload
+                });
+            case s.CONTACT_ONE_CHANGE:
+                return babelHelpers.extends({}, e, {
+                    contactOne: a.payload
+                });
+            case s.CONTACT_TWO_CHANGE:
+                return babelHelpers.extends({}, e, {
+                    contactTwo: a.payload
+                });
+            case s.SOS_DETAILS_FETCHING_DATA:
+                return babelHelpers.extends({}, e, {
+                    errorUserDetails: !1,
+                    loadingUserDetails: !0
+                });
+            case s.SOS_DETAILS_FETCHING_SUCESS:
+                return babelHelpers.extends({}, e, {
+                    errorUserDetails: !1,
+                    loadingUserDetails: !1
+                });
+            default:
+                return e
+        }
+    }
+}, 355);
+__d(function(e, a, r, s) {
+    Object.defineProperty(s, "__esModule", {
+        value: !0
+    });
+    var t = a(344),
+        n = (a(357), {
+            userName: "Login/Register",
+            token: " ",
+            userEmail: "",
+            userImage: "",
+            isLoading: !1,
+            myCardList: []
+        });
+    s.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : n,
+            a = arguments[1];
+        switch (a.type) {
+            case "FETCHING_MY_CARD_LIST":
+                return babelHelpers.extends({}, e, {
+                    isLoading: !0
+                });
+            case t.USER_NAME_CHECK:
+                return babelHelpers.extends({}, e, {
+                    userName: a.payload
+                });
+            case t.USER_EMAIL_CHECK:
+                return babelHelpers.extends({}, e, {
+                    userEmail: a.payload
+                });
+            case t.USER_IMAGE_CHECK:
+                return babelHelpers.extends({}, e, {
+                    userImage: a.payload
+                });
+            case "MY_CARDLIST_RCKEY":
+                return babelHelpers.extends({}, e, {
+                    myCardList: a.payload,
+                    isLoading: !1
+                });
+            default:
+                return e
+        }
+    }
+}, 356);
+__d(function(e, t, n, r) {
+    function a(e) {
+        return w.async(function(t) {
+            for (;;) switch (t.prev = t.next) {
+                case 0:
+                    return t.next = 2, w.awrap(x.AsyncStorage.setItem("userData", JSON.stringify(e)));
+                case 2:
+                case 3:
+                case "end":
+                    return t.stop()
+            }
+        }, null, this)
+    }
+
+
+    r.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
+            a = arguments[1];
+        switch (a.type) {
+            case s.ROUTE_DIAGRAM_ROUTE_LIST:
+                return babelHelpers.extends({}, e, {
+                    route_diagram_routes: a.payload
+                });
+            case s.ROUTE_DIAGRAM_LOADER:
+                return babelHelpers.extends({}, e, {
+                    loader: a.payload
+                });
+            case s.ROUTE_DIAGRAM_MAP_LOADER:
+                return babelHelpers.extends({}, e, {
+                    mapLoader: a.payload
+                });
+            case s.ROUTE_DIAGRAM_STOPS_ON_ROUTE_LIST:
+                return babelHelpers.extends({}, e, {
+                    stops_list: a.payload
+                });
+            case s.ROUTE_DIAGRAM_STOPS_ON_ROUTE_POSITION:
+                return babelHelpers.extends({}, e, {
+                    stops_position: a.payload
+                });
+            default:
+                return e
+        }
+    }
+}, 448);
+__d(function(t, e, a, r) {
+    Object.defineProperty(r, "__esModule", {
+        value: !0
+    });
+    var o = e(344),
+        _ = {
+            transaction_history_list_footer_loader: !1,
+            transaction_history_loader: !1,
+            transaction_history_list: []
+        };
+    r.default = function() {
+        var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
+            e = arguments[1];
+        switch (e.type) {
+            case o.TRANSACTION_HISTORY_LOADER:
+                return babelHelpers.extends({}, t, {
+                    transaction_history_loader: e.payload
+                });
+            case o.TRANSACTION_HISTORY_LIST:
+                return babelHelpers.extends({}, t, {
+                    transaction_history_list: e.payload
+                });
+            case o.TRANSACTION_HISTORY_LIST_FOOTER_LOADER:
+                return babelHelpers.extends({}, t, {
+                    transaction_history_list_footer_loader: e.payload
+                });
+            default:
+                return t
+        }
+    }
+}, 449);
+__d(function(e, a, d, r) {
+    Object.defineProperty(r, "__esModule", {
+        value: !0
+    });
+    var t = a(344),
+        _ = {
+            myCardList: [],
+            isLoading: !0,
+            add_topup_loader: !1,
+            add_topup_form_response: ""
+        };
+    r.default = function() {
+        var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _,
+            a = arguments[1];
+        switch (a.type) {
+            case t.ADD_TOPUP_LOADER:
+                return babelHelpers.extends({}, e, {
+                    add_topup_loader: a.payload
+                });
+            case t.ADD_TOPUP__FORM_RESPONSE:
+                return babelHelpers.extends({}, e, {
+                    add_topup_form_response: a.payload
+                });
+            case "FETCHING_MY_CARD_LIST":
+                return babelHelpers.extends({}, e, {
+                    myCardList: [],
+                    isLoading: !0
+                });
+            case "MY_CARDLIST_RCKEY":
+                return babelHelpers.extends({}, e, {
+                    myCardList: a.payload,
+                    isLoading: !1
+                });
+            default:
+                return e
+        }
+    }
+}, 450);
+__d(function(e, t, a, l) {
+    Object.defineProperty(l, "__esModule", {
+        value: !0
+    });
+    var r = t(47),
+        n = babelHelpers.interopRequireDefault(r),
+        i = t(12),
+        u = t(358),
+        o = t(452),
+        c = (babelHelpers.interopRequireDefault(o), t(518)),
+        f = babelHelpers.interopRequireDefault(c),
+        p = t(522),
+        d = babelHelpers.interopRequireDefault(p),
+        m = t(656),
+        b = babelHelpers.interopRequireDefault(m),
+        s = t(453),
+        D = babelHelpers.interopRequireDefault(s),
+        S = t(657),
+        R = babelHelpers.interopRequireDefault(S),
+        y = t(828),
+        E = babelHelpers.interopRequireDefault(y),
+        k = t(829),
+        H = babelHelpers.interopRequireDefault(k),
+        q = t(830),
+        h = babelHelpers.interopRequireDefault(q),
+        v = t(836),
+        B = babelHelpers.interopRequireDefault(v),
+        N = t(844),
+        g = babelHelpers.interopRequireDefault(N),
+        T = t(887),
+        F = babelHelpers.interopRequireDefault(T),
+        P = t(889),
+        C = babelHelpers.interopRequireDefault(P),
+        A = t(896),
+        G = babelHelpers.interopRequireDefault(A),
+        M = t(898),
+        O = babelHelpers.interopRequireDefault(M),
+        w = t(899),
+        I = babelHelpers.interopRequireDefault(w),
+        L = t(916),
+        U = babelHelpers.interopRequireDefault(L),
+        _ = t(919),
+        J = babelHelpers.interopRequireDefault(_),
+        W = t(922),
+        j = babelHelpers.interopRequireDefault(W),
+        x = t(942),
+        z = babelHelpers.interopRequireDefault(x),
+        V = t(946),
+        K = babelHelpers.interopRequireDefault(V),
+        Q = t(954),
+        X = babelHelpers.interopRequireDefault(Q),
+        Y = t(956),
+        Z = babelHelpers.interopRequireDefault(Y),
+        $ = t(957),
+        ee = babelHelpers.interopRequireDefault($),
+        te = t(959),
+        ae = babelHelpers.interopRequireDefault(te),
+        le = t(464),
+        re = babelHelpers.interopRequireDefault(le),
+        ne = t(960),
+        ie = babelHelpers.interopRequireDefault(ne),
+        ue = t(963),
+        oe = babelHelpers.interopRequireDefault(ue),
+        ce = t(965),
+        fe = babelHelpers.interopRequireDefault(ce),
+        pe = t(967),
+        de = babelHelpers.interopRequireDefault(pe),
+        me = t(976),
+        be = babelHelpers.interopRequireDefault(me),
+        se = t(977),
+        De = babelHelpers.interopRequireDefault(se),
+        Se = t(982),
+        Re = babelHelpers.interopRequireDefault(Se),
+        ye = t(984),
+        Ee = babelHelpers.interopRequireDefault(ye),
+        ke = t(990),
+        He = babelHelpers.interopRequireDefault(ke),
+        qe = t(994),
+        he = babelHelpers.interopRequireDefault(qe),
+        ve = t(998),
+        Be = babelHelpers.interopRequireDefault(ve),
+        Ne = t(1022),
+        ge = babelHelpers.interopRequireDefault(Ne),
+        Te = t(1024),
+        Fe = babelHelpers.interopRequireDefault(Te),
+        Pe = t(1025),
+        Ce = babelHelpers.interopRequireDefault(Pe),
+        Ae = t(1039),
+        Ge = babelHelpers.interopRequireDefault(Ae),
+        Me = t(1041),
+        Oe = babelHelpers.interopRequireDefault(Me),
+        we = t(1040),
+        Ie = babelHelpers.interopRequireDefault(we),
+        Le = t(1043),
+        Ue = babelHelpers.interopRequireDefault(Le),
+        _e = t(1044),
+        Je = babelHelpers.interopRequireDefault(_e),
+        We = t(1045),
+        je = babelHelpers.interopRequireDefault(We),
+        xe = t(1059),
+        ze = babelHelpers.interopRequireDefault(xe),
+        Ve = t(1029),
+        Ke = babelHelpers.interopRequireDefault(Ve),
+        Qe = t(1061),
+        Xe = babelHelpers.interopRequireDefault(Qe),
+        Ye = t(1062),
+        Ze = babelHelpers.interopRequireDefault(Ye),
+        $e = t(1063),
+        et = babelHelpers.interopRequireDefault($e),
+        tt = t(1079),
+        at = babelHelpers.interopRequireDefault(tt),
+        lt = t(1081),
+        rt = babelHelpers.interopRequireDefault(lt),
+        nt = t(527),
+        it = (babelHelpers.interopRequireWildcard(nt), t(1357)),
+        ut = babelHelpers.interopRequireDefault(it),
+        ot = t(1359),
+        ct = babelHelpers.interopRequireDefault(ot),
+        ft = t(1360),
+        pt = babelHelpers.interopRequireDefault(ft),
+        dt = t(1361),
+        mt = babelHelpers.interopRequireDefault(dt),
+        bt = t(1362),
+        st = babelHelpers.interopRequireDefault(bt),
+        Dt = t(1364),
+        St = babelHelpers.interopRequireDefault(Dt),
+        Rt = t(1369),
+        yt = babelHelpers.interopRequireDefault(Rt),
+        Et = t(1373),
+        kt = babelHelpers.interopRequireDefault(Et),
+        Ht = function() {
+            return n.default.createElement(u.Router, {
+                navigationBarStyle: {
+                    backgroundColor: "#2F5597",
+                    elevation: 10
+                },
+                titleStyle: {
+                    fontFamily: "System",
+                    fontSize: 20,
+                    color: "#fff",
+                    fontWeight: "normal"
+                },
+                navBarButtonColor: {
+                    color: "#fff"
+                }
+            }, n.default.createElement(u.Overlay, {
+                key: "overlay"
+            }, n.default.createElement(u.Modal, {
+                key: "modal",
+                renderLeftButton: Xe.default,
+                hideNavBar: !1,
+                transitionConfig: function() {
+                    return {
+                        screenInterpolator: ut.default.forVertical,
+                        transitionSpec: {
+                            duration: 400,
+                            timing: i.Animated.timing
+                        }
+                    }
+                }
+            }, n.default.createElement(u.Scene, {
+                key: "Login1",
+                component: D.default,
+                title: "Redux Sample"
+            }), n.default.createElement(u.Scene, {
+                key: "Login",
+                component: f.default,
+                title: "Login"
+            }), n.default.createElement(u.Scene, {
+                key: "LoginOtp",
+                component: d.default,
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "GenerateOtp",
+                component: b.default,
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "RegisterPage",
+                component: R.default
+            }), n.default.createElement(u.Scene, {
+                key: "ForgotPassword",
+                component: E.default,
+                title: "Forgot Password",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "StopDetailsTimeTable",
+                component: C.default,
+                title: "New file",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "RouteSearchTimeTable",
+                component: Re.default,
+                title: "Time Table"
+            }), n.default.createElement(u.Scene, {
+                key: "BusDetailsTimeTable",
+                component: F.default,
+                hideNavBar: !1,
+                title: "BusDetailsTimeTable"
+            }), n.default.createElement(u.Scene, {
+                key: "RouteBusInfoTimeTable",
+                component: G.default,
+                title: "RouteBusInfoTimeTable"
+            }), n.default.createElement(u.Scene, {
+                key: "BusDetailsEta",
+                component: H.default,
+                title: "Eta Bus Details"
+            }), n.default.createElement(u.Scene, {
+                key: "RouteDetailsEta",
+                component: B.default,
+                title: "RouteDetailsEta"
+            }), n.default.createElement(u.Scene, {
+                key: "StopSearchEtd",
+                component: be.default,
+                title: "StopSearchEta",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "RouteDetailsEtd",
+                component: X.default,
+                title: "RouteDetailsEtd"
+            }), n.default.createElement(u.Scene, {
+                key: "MapEta",
+                component: h.default,
+                title: "Map"
+            }), n.default.createElement(u.Scene, {
+                key: "BusDetailsEtd",
+                component: Z.default,
+                title: "BusDetailsEtd"
+            }), n.default.createElement(u.Scene, {
+                key: "RouteDetailsPlan",
+                component: K.default,
+                title: "Routes"
+            }), n.default.createElement(u.Scene, {
+                key: "StopNamePlan",
+                component: ee.default,
+                title: "Stop Names",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "RouteNamePlan",
+                component: ae.default,
+                title: "Route Name",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "BusDetailsPlan",
+                component: ie.default,
+                title: "Route Details"
+            }), n.default.createElement(u.Scene, {
+                key: "GrievanceForm",
+                component: ge.default,
+                title: "Grievance"
+            }), n.default.createElement(u.Scene, {
+                key: "GrievancesDetails",
+                component: Fe.default,
+                title: "Details"
+            }), n.default.createElement(u.Scene, {
+                key: "PlacesofAttractionDetail",
+                component: he.default,
+                title: "Places Detail"
+            }), n.default.createElement(u.Scene, {
+                key: "SeeFormDetailsSos",
+                component: Oe.default,
+                title: "SOS Details"
+            }), n.default.createElement(u.Scene, {
+                key: "SubmitFormSos",
+                component: Ie.default,
+                title: "SOS"
+            }), n.default.createElement(u.Scene, {
+                key: "DrawerItem",
+                component: je.default
+            }), n.default.createElement(u.Scene, {
+                key: "DatePickerComponent",
+                component: re.default,
+                title: "DatePickerComponent",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "UploadPhoto",
+                component: O.default,
+                title: "UploadPhoto",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "UserDetails",
+                component: Ue.default,
+                title: "Edit Profile"
+            }), n.default.createElement(u.Scene, {
+                key: "Medium",
+                component: Ze.default,
+                title: "",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "FareChartDummySearch",
+                component: rt.default,
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "Dashboard",
+                component: g.default,
+                title: "Dashboard",
+                initial: !0,
+                duration: 2
+            }), n.default.createElement(u.Scene, {
+                key: "FareChartRouteSearch",
+                component: ct.default,
+                title: "Fare Chart",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "FareChartStopSearch",
+                component: st.default,
+                title: "Fare Chart",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "MyAccount",
+                component: et.default,
+                title: "MyAccount",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "Grievances",
+                component: Be.default,
+                title: "Grievances",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "GrievanceRouteSearch",
+                component: pt.default,
+                title: "GrievanceRouteSearch",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "GrievanceStopSearch",
+                component: mt.default,
+                title: "GrievanceStopSearch",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "Payment",
+                component: kt.default,
+                title: "Payment",
+                hideBackImage: !0,
+                hideNavBar: !0
+            }), n.default.createElement(u.Drawer, {
+                hideNavBar: !0,
+                key: "drawer",
+                contentComponent: Je.default,
+                navBar: Ke.default,
+                drawerWidth: 300,
+                onOpen: function() {
+                    return u.Actions.refresh({
+                        key: 1,
+                        open: !0
+                    })
+                },
+                onClose: function() {
+                    return u.Actions.refresh({
+                        key: 0,
+                        open: !1
+                    })
+                },
+                panHandlers: null
+            }, n.default.createElement(u.Modal, {
+                key: "modal",
+                hideNavBar: !1,
+                transitionConfig: function() {
+                    return {
+                        screenInterpolator: ut.default.forFadeFromBottomAndroid,
+                        transitionSpec: {
+                            duration: 500,
+                            timing: i.Animated.timing
+                        }
+                    }
+                }
+            }, n.default.createElement(u.Scene, {
+                key: "FeedBack",
+                component: U.default,
+                title: "Feedback"
+            }), n.default.createElement(u.Scene, {
+                key: "TimeTable",
+                component: z.default,
+                title: "Time Table",
+                search: "TimeTable",
+                navBar: ze.default
+            }), n.default.createElement(u.Scene, {
+                key: "StopSearchEta",
+                component: de.default,
+                title: "Bus Details"
+            }), n.default.createElement(u.Scene, {
+                key: "Eta",
+                component: fe.default,
+                search: "ETA",
+                title: "Arrival",
+                navBar: ze.default
+            }), n.default.createElement(u.Scene, {
+                key: "Etd",
+                component: oe.default,
+                title: "Departure",
+                search: "ETA",
+                navBar: ze.default
+            }), n.default.createElement(u.Scene, {
+                key: "JourneyPlanner",
+                component: j.default,
+                title: "Journey Planner",
+                search: "JourneyPlanner"
+            }), n.default.createElement(u.Scene, {
+                key: "Ticketing",
+                component: I.default,
+                title: "Recharge"
+            }), n.default.createElement(u.Scene, {
+                key: "Updates",
+                component: J.default,
+                title: "Updates"
+            }), n.default.createElement(u.Scene, {
+                key: "Favourite",
+                component: De.default,
+                title: "Favourite"
+            }), n.default.createElement(u.Scene, {
+                key: "Grievances",
+                component: Be.default,
+                title: "Grievances"
+            }), n.default.createElement(u.Scene, {
+                key: "PlacesofAttraction",
+                component: He.default,
+                title: "Places of Attraction"
+            }), n.default.createElement(u.Scene, {
+                key: "Contact",
+                component: Ee.default,
+                title: "Emergency Contacts",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "FareChart",
+                component: Ce.default,
+                title: "Fare Chart",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "Sos",
+                component: Ge.default,
+                title: "SOS"
+            }), n.default.createElement(u.Scene, {
+                key: "FareChartDummy",
+                component: at.default,
+                title: "Fare Chart"
+            }), n.default.createElement(u.Scene, {
+                key: "StopDetails",
+                component: St.default,
+                title: "Stop Details",
+                hideNavBar: !0
+            }), n.default.createElement(u.Scene, {
+                key: "RouteDiagramComponent",
+                component: yt.default,
+                title: "Route Diagram"
+    }, a.sampleApiCallWigh_Params = function(e) {
+        e.email, e.password;
+        return function(e) {
+            var t, n;
+            return c.async(function(a) {
+                for (;;) switch (a.prev = a.next) {
+                    case 0:
+                        return e({
+                            type: r.FETCHING_DATA
+                        }), a.prev = 1, t = {
+                            UserName: "powergrid",
+                            Password: "bipros123#",
+                            grant_type: "password"
+                        }, a.next = 5, c.awrap(s.default.post("token", t));
+                    case 5:
+                        n = a.sent, console.log("Login resp " + n), a.next = 11;
+                        break;
+                    case 9:
+                        a.prev = 9, a.t0 = a.catch(1);
+                    case 11:
+                    case "end":
+                        return a.stop()
+                }
+            }, null, i, [
+                [1, 9]
+            ])
+        }
+    }, a.sampleApiCall = function(e) {
+        e.email;
+        return function(e) {
+            var t, n;
+            return c.async(function(a) {
+                for (;;) switch (a.prev = a.next) {
+                    case 0:
+                        return e({
+                            type: r.FETCHING_DATA
+                        }), a.prev = 1, t = {
+                            processDefinitionKey: "BRTSCompliant",
+                            tenantId: "BRTS",
+                            title: "DemoTest 2",
+                            incidentDateTime: "2017-12-22T12:05:55+05:30",
+                            incidentCategory: "4000",
+                            incidentSubCategory: "4031",
+                            busNum: "M006",
+                            operatorId: "SMTL",
+                            priority: "Medium",
+                            severity: "Medium",
+                            equipmentId: "351501052474501",
+                            equipmentName: "OBU",
+                            routeId: "8D",
+                            stopId: "75",
+                            location: "Kashiram Textiles",
+                            incidentDesc: "DemoTest 2",
+                            originSystem: "Manual"
+                        }, a.next = 6, c.awrap(s.default.postGrievances("http://192.168.1.224:8080/engine-rest/imsExternalTask/createIncident", t));
+                    case 6:
+                        n = a.sent, e({
+                            type: r.ORIGIN_REF,
+                            payload: (0, p.makeList)(n)
+                        }), a.next = 13;
+                        break;
+                    case 11:
+                        a.prev = 11, a.t0 = a.catch(1);
+                    case 13:
+                    case "end":
+                        return a.stop()
+                }
+            }, null, i, [
+                [1, 11]
+            ])
+        }
+    }, a.CallinSample = function(e) {
+        var n = (e.email, "Demo Test"),
+            a = (t(482), {
+                processDefinitionKey: "BRTSCompliant",
+                tenantId: "BRTS",
+                title: n,
+                incidentDateTime: "2017-12-22T12:05:55+05:30",
+                incidentCategory: "4000",
+                incidentSubCategory: "4031",
+                busNum: "M006",
+                operatorId: "SMTL",
+                priority: "Medium",
+                severity: "Medium",
+                equipmentId: "351501052474501",
+                equipmentName: "OBU",
+                routeId: "8D",
+                stopId: "75",
+                location: "Kashiram Textiles",
+                incidentDesc: n,
+                originSystem: "Manual"
+            });
+        return function(e) {
+            e({
+                type: r.FETCHING_DATA
+            });
+            try {
+                var t = new l("mobapp:mobapp123@").toString("base64");
+                fetch("http://192.168.1.224:8080/engine-rest/imsExternalTask/createIncident", {
+
+
+            for (var a = (Array.from(new Set(r)), 0); a < i; a++) {
+                var d = {
+                    MonitoringRef: o[a].MonitoringRef ? o[a].MonitoringRef : "",
+                    routeCode: o[a].MonitoredVehicleJourney.LineRef ? o[a].MonitoredVehicleJourney.LineRef : "",
+                    DirectionRef: o[a].MonitoredVehicleJourney.DirectionRef ? o[a].MonitoredVehicleJourney.DirectionRef : "",
+                    VariantRef: o[a].MonitoredVehicleJourney.VariantRef ? o[a].MonitoredVehicleJourney.VariantRef : "",
+                    PublishedLineName: o[a].MonitoredVehicleJourney.PublishedLineName ? o[a].MonitoredVehicleJourney.PublishedLineName : "",
+                    OriginRef: o[a].MonitoredVehicleJourney.OriginRef ? o[a].MonitoredVehicleJourney.OriginRef : "",
+                    OriginName: o[a].MonitoredVehicleJourney.OriginName ? o[a].MonitoredVehicleJourney.OriginName : "",
+                    DestinationRef: o[a].MonitoredVehicleJourney.DestinationRef ? o[a].MonitoredVehicleJourney.DestinationRef : "",
+                    DestinationName: o[a].MonitoredVehicleJourney.DestinationName ? o[a].MonitoredVehicleJourney.DestinationName : "",
+                    Monitored: !!o[a].MonitoredVehicleJourney.Monitored && o[a].MonitoredVehicleJourney.Monitored,
+                    VehicleLocationLongitude: o[a].MonitoredVehicleJourney.VehicleLocation.Longitude ? o[a].MonitoredVehicleJourney.VehicleLocation.Longitude : "",
+                    VehicleLocationLatitude: o[a].MonitoredVehicleJourney.VehicleLocation.Latitude ? o[a].MonitoredVehicleJourney.VehicleLocation.Latitude : "",
+                    Occupancy: o[a].MonitoredVehicleJourney.Occupancy ? o[a].MonitoredVehicleJourney.Occupancy : "",
+                    ApproachingDistance: o[a].MonitoredVehicleJourney.ApproachingDistance ? o[a].MonitoredVehicleJourney.ApproachingDistance : "",
+                    VehicleRefForMapChecking: o[a].MonitoredVehicleJourney.VehicleRef ? o[a].MonitoredVehicleJourney.VehicleRef : a + 1,
+                    VehicleRef: o[a].MonitoredVehicleJourney.VehicleRef ? o[a].MonitoredVehicleJourney.VehicleRef : "NEXT BUS",
+                    VisitNumber: o[a].MonitoredVehicleJourney.MonitoredCall.VisitNumber ? o[a].MonitoredVehicleJourney.MonitoredCall.VisitNumber : "",
+                    Order: o[a].MonitoredVehicleJourney.MonitoredCall.Order ? o[a].MonitoredVehicleJourney.MonitoredCall.Order : "",
+                    VehicleAtStop: !!o[a].MonitoredVehicleJourney.MonitoredCall.VehicleAtStop && o[a].MonitoredVehicleJourney.MonitoredCall.VehicleAtStop,
+                    stopName: o[a].MonitoredVehicleJourney.MonitoredCall.StopPointName ? o[a].MonitoredVehicleJourney.MonitoredCall.StopPointName : "",
+                    VehicleAtStop_Longitude: o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop && o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop.Longitude ? o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop.Longitude : "",
+                    VehicleAtStop_Latitude: o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop && o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop.Latitude ? o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop.Latitude : "",
+                    AimedArrivalTime: l(o[a].MonitoredVehicleJourney.MonitoredCall.AimedArrivalTime ? o[a].MonitoredVehicleJourney.MonitoredCall.AimedArrivalTime : ""),
+                    ArrivingIn: Math.round(o[a].MonitoredVehicleJourney.MonitoredCall.ArrivingIn ? o[a].MonitoredVehicleJourney.MonitoredCall.ArrivingIn : ""),
+                    ExpectedArrivalTime: l(o[a].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime ? o[a].MonitoredVehicleJourney.MonitoredCall.ExpectedArrivalTime : ""),
+                    AimedDepartureTime: l(o[a].MonitoredVehicleJourney.MonitoredCall.AimedDepartureTime ? o[a].MonitoredVehicleJourney.MonitoredCall.AimedDepartureTime : ""),
+                    ExpectedDepartureTime: l(o[a].MonitoredVehicleJourney.MonitoredCall.ExpectedDepartureTime ? o[a].MonitoredVehicleJourney.MonitoredCall.ExpectedDepartureTime : ""),
+                    position: {
+                        stopLatitude: o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop && o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop.Latitude ? o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop.Latitude : "",
+                        stopLongitude: o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop && o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop.Longitude ? o[a].MonitoredVehicleJourney.MonitoredCall.VehicleLocationV1DtoAtStop.Longitude : ""
+                    },
+                    vehicleLocation: {
+                        busLatitude: o[a].MonitoredVehicleJourney.VehicleLocation && o[a].MonitoredVehicleJourney.VehicleLocation.Latitude ? o[a].MonitoredVehicleJourney.VehicleLocation.Latitude : "",
+                        busLongitude: o[a].MonitoredVehicleJourney.VehicleLocation && o[a].MonitoredVehicleJourney.VehicleLocation.Longitude ? o[a].MonitoredVehicleJourney.VehicleLocation.Longitude : ""
+                    }
+                };
+                            var r = {
+                                Position: {
+                                    stopLongitude: e[i].Position.stopLongitude ? e[i].Position.stopLongitude : "",
+                                    stopLatitude: e[i].Position.stopLatitude ? e[i].Position.stopLatitude : ""
+                                },
+                                RouteCodes: e[i].RouteCodes ? e[i].RouteCodes : "",
+                                Sequence: e[i].Sequence ? e[i].Sequence : "",
+                                shortStopName: e[i].shortStopName ? e[i].shortStopName : "",
+                                stationCode: e[i].stationCode ? e[i].stationCode : "",
+                                stopCode: e[i].stopCode ? e[i].stopCode : "",
+                                stopName: e[i].stopName ? e[i].stopName : "",
+                                stopType: e[i].stopType ? e[i].stopType : "",
+                                FavoriteRoute: e[i].RouteCodes ? e[i].RouteCodes : "",
+                                StopName: e[i].stopName ? e[i].stopName : "",
+                                StopCode: e[i].stopCode ? e[i].stopCode : "",
+                                UserFavoriteId: t[i].UserFavoriteId,
+                                UserId: t[i].UserId,
+                                CreatedDate: t[i].CreatedDate,
+                                FavoriteType: "stop",
+                                IsActive: !0
+                            };
+                            o.push(r)
+                        } else {
+                            var n = {
+                                Position: {
+                                    stopLongitude: e[i].Position.stopLongitude,
+                                    stopLatitude: e[i].Position.stopLatitude
+                                },
+                                RouteCodes: e[i].RouteCodes,
+                                Sequence: e[i].Sequence,
+                                shortStopName: e[i].shortStopName,
+                                stationCode: e[i].stationCode,
+                                stopCode: e[i].stopCode,
+                                stopName: e[i].stopName,
+                                stopType: e[i].stopType,
+                                StopName: "",
+                                StopCode: "",
+                                UserFavoriteId: "",
+                                UserId: "",
+                                CreatedDate: "",
+                                FavoriteRoute: "",
+                                FavoriteType: "",
+                                IsActive: !1
+                            };
+                            o.push(n)
+                        } else o = e
+                }, r = 0; r < e.length; r++) i(r);
+        return o
+    }
+
+    function d(e, t) {
+        var o = [];
+        if (null != e) {
+            for (i = 0; i <= e.length - 1; i++) {
+                var r = {
+                    Position: {
+                        stopLongitude: e[i].Position.stopLongitude ? e[i].Position.stopLongitude : "",
+                        stopLatitude: e[i].Position.stopLatitude ? e[i].Position.stopLatitude : ""
+                    },
+                    RouteCodes: e[i].RouteCodes ? e[i].RouteCodes : "",
+                    Sequence: e[i].Sequence ? e[i].Sequence : "",
+                    shortStopName: e[i].shortStopName ? e[i].shortStopName : "",
+                    stationCode: e[i].stationCode ? e[i].stationCode : "",
+                    stopCode: e[i].stopCode ? e[i].stopCode : "",
+                    stopName: e[i].stopName ? e[i].stopName : "",
+                    stopType: e[i].stopType ? e[i].stopType : "",
+                    FavoriteRoute: "",
+                    StopName: "",
+                    StopCode: "",
+                    UserFavoriteId: "",
+                    UserId: "",
+                    CreatedDate: "",
+                    FavoriteType: "stop",
+                    IsActive: !1
+                };
+                o.push(r)
+            }
+            if (null != t)
+                for (i = 0; i <= o.length - 1; i++)
+                    for (j = 0; j <= t.length - 1; j++) console.log(o[i].stopCode), console.log(t[j].StopCode), t[j].StopCode == o[i].stopCode && (o[i].FavoriteRoute = t[j].FavoriteRoute ? t[j].FavoriteRoute : "", o[i].StopName = t[j].StopName ? t[j].StopName : "", o[i].StopCode = t[j].StopCode ? t[j].StopCode : "", o[i].UserFavoriteId = t[j].UserFavoriteId ? t[j].UserFavoriteId : "", o[i].UserId = t[j].UserId ? t[j].UserId : "", o[i].CreatedDate = t[j].CreatedDate ? t[j].CreatedDate : "", o[i].IsActive = !!t[j].IsActive && t[j].IsActive)
+        }
+        return o
+    }
+
+    function l(e) {
+        if ("" == e) return "";
+        var t = e.split("T"),
+            o = (t[0], t[1]),
+            i = o.split("+");
+        return i[0]
+    }
+
+    function c(e) {
+        for (var t = [], o = 0; o < e.length; o++) {
+            var i = {
+                stopName: e[o].stopName,
+                stopLongitude: e[o].Position.stopLongitude,
+                stopLatitude: e[o].Position.stopLatitude,
+                animDelay: 500 * o
+            };
+            t.push(i)
+        }
+        return t
+    }
+    Object.defineProperty(r, "__esModule", {
+        value: !0
+    }), r.MonitoredVehicleJourney = r.busStopDetails = r.routeDetails = r.etaStopDetailsList = void 0, r.getEtaList = n, r.getFevStopListTest = a, r.getFevStopList = d, r.getEtaListForMap = c;
+    var u = t(485);
+    r.etaStopDetailsList = [{
+        locName: "RTO- DH"
+    }, {
+        locName: "1ST GATE - 1"
+    }, {
+        locName: "1ST GATE - 2"
+    }, {
+        locName: "2ND GATE - 1"
+    }, {
+        locName: "2ND GATE - 2"
+    }, {
+        locName: "2ND GATE - 3"
+    }, {
+        locName: "ABHINAYA NAGAR - 1"
+    }, {
+        locName: "ABHINAYA NAGAR - 2"
+    }, {
+        locName: "ADDHYAPARK NAGAR - 1"
+    }, {
+        locName: "ADDHYAPARK NAGAR - 2"
+    }, {
+        locName: "AIRPORT - 1"
+    }, {
+        locName: "AIRPORT - 2"
+    }], r.routeDetails = [{
+        busNo: "100D-DKMC",
+        startplace: "DEPOT",
+        starttime: "12:00PM",
+        endplace: "KMC",
+        endtime: "03:00PM"
+    }, {
+        busNo: "100D-CBT",
+        startplace: "CBT",
+        starttime: "10:50AM",
+        endplace: "DEPOT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-CBT1D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "500D-HB",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "11D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-DKMC",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-CBT1D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "500D-HB",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "11D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-DKMC",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "500D-HB",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "11D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-DKMC",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-CBT1D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "500D-HB",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "11D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-DKMC",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }], r.busStopDetails = [{
+        busNo: "2341",
+        stopName: "HDMC- DH",
+        eta: "10:00AM",
+        etd: "10:05PM"
+    }, {
+        busNo: "2342",
+        stopName: "RTO- DH",
+        eta: "10:15AM",
+        etd: "10:20PM"
+    }, {
+        busNo: "2343",
+        stopName: "1ST GATE - 1",
+        eta: "10:30AM",
+        etd: "10:35PM"
+    }, {
+        busNo: "2344",
+        stopName: "1ST GATE - 2",
+        eta: "10:50AM",
+        etd: "10:55PM"
+    }, {
+        busNo: "2345",
+        stopName: "2ND GATE - 1",
+        eta: "11:05AM",
+        etd: "11:10PM"
+    }, {
+        busNo: "2346",
+        stopName: "2ND GATE - 2",
+        eta: "11:15AM",
+        etd: "11:20PM"
+    }, {
+        busNo: "2347",
+        stopName: "2ND GATE - 3",
+        eta: "11:30AM",
+        etd: "11:35PM"
+    }, {
+        busNo: "2348",
+        stopName: "ABHINAYA NAGAR - 1",
+        eta: "11:50AM",
+        etd: "11:55PM"
+    }, {
+        busNo: "2349",
+        stopName: "ABHINAYA NAGAR - 2",
+        eta: "12:05AM",
+        etd: "12:07PM"
+    }, {
+        busNo: "2366",
+        stopName: "ADDHYAPARK NAGAR - 1",
+        eta: "12:15AM",
+        etd: "12:18PM"
+    }, {
+        busNo: "2355",
+        stopName: "ADDHYAPARK NAGAR - 2",
+        eta: "12:30AM",
+        etd: "12:35PM"
+    }, {
+        busNo: "2333",
+        stopName: "AIRPORT - 1",
+        eta: "12:45AM",
+        etd: "12:47PM"
+    }], r.MonitoredVehicleJourney = {
+        ResponseTimestamp: "2017-12-05T13:18:12+05:30",
+        ValidUntil: "2017-12-05T13:20:12+05:30",
+        MonitoredStopVisit: [{
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "700-HD",
+                DirectionRef: "BSNL Building TO Jubilee Circle",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 3542",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake-D",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "500-HD",
+                DirectionRef: "BSNL Building TO Jubilee Circle",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 2453",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- H",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "500-HD",
+                DirectionRef: "BSNL Building TO Jubilee Circle",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 1425",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "500-HD",
+                DirectionRef: "BBSR TO CTC",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 3044",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- D",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "600-HD",
+                DirectionRef: "BBSR TO CTC",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !1,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 2222",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake1",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "600-HD",
+                DirectionRef: "BBSRTO TO BPD",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 1111",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- HD",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+
+
+
+
+    Object.defineProperty(d, "__esModule", {
+        value: !0
+    }), d.busListForRoute = i, d.getTimeTableList = a;
+    d.routeList = [{
+        routeCode: "19U",
+        startName: "PATRAKARTH NAGAR",
+        endName: "CBT",
+        startTime: "10:50AM",
+        endTime: "12:50PM",
+        days: "1,3"
+    }, {
+        routeCode: "500D-BH",
+        startName: "BSNL Building",
+        endName: "Depot",
+        startTime: "10:50AM",
+        endtTime: "12:50PM",
+        days: "1,3"
+    }, {
+        routeCode: "500-HD",
+        startName: "BSNL Building",
+        endName: "Jubliee Building",
+        startTime: "10:50AM",
+        endTime: "12:50PM",
+        days: "1,3"
+    }, {
+        routeCode: "100D-KMCD",
+        startName: "KMC",
+        endName: "Depot",
+        startTime: "10:50AM",
+        endTime: "12:50PM",
+        days: "1,3"
+    }, {
+        routeCode: "100D-DCBT1",
+        startName: "Depot",
+        endName: "CBT",
+        startTime: "10:50AM",
+        endTime: "12:50PM",
+        days: "1,3"
+    }, {
+        routeCode: "100D-DCBT1",
+        startName: "Depot",
+        endName: "CBT",
+        startTime: "10:50AM",
+        endTime: "12:50PM",
+        days: "1,3"
+    }, {
+        routeCode: "100D-DCBT1",
+        startName: "Depot",
+        endName: "CBT",
+        startTime: "10:50AM",
+        endTime: "12:50PM",
+        days: "1,3"
+    }, {
+        routeCode: "100D-DCBT1",
+        startName: "Depot",
+        endName: "CBT",
+        startTime: "10:50AM",
+        endTime: "12:50PM",
+        days: "1,3"
+    }], d.stopList = [{
+        stopName: "HDMC- DH",
+        startTime: "10:00PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "RTO- DH",
+        startTime: "10:15PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "1ST GATE - 1",
+        startTime: "10:30PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "1ST GATE - 2",
+        startTime: "10:45PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "2ND GATE - 1",
+        startTime: "11:00PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "2ND GATE - 2",
+        startTime: "11:15PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "2ND GATE - 3",
+        startTime: "11:30PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "ABHINAYA NAGAR - 1",
+        startTime: "11:45PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "ABHINAYA NAGAR - 2",
+        time: "12:00PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "ADDHYAPARK NAGAR - 1",
+        time: "12:15PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+    }, {
+        stopName: "ADDHYAPARK NAGAR - 2",
+        time: "12:30PM",
+        endTime: "10:00PM",
+        stopLatitude: "27.1122545",
+        stopLongitude: "70.1111"
+
+
+
+    e.contactList = [{
+        id: "1",
+        contact_person_name: "Control Room",
+        contact_person_number: "100",
+        emergency_contact_type: "1",
+        contact_icon: t(490)
+    }, {
+        id: "2",
+        contact_person_name: "Police Station",
+        contact_person_number: "0836-2233443",
+        emergency_contact_type: "3",
+        contact_icon: t(491)
+    }, {
+        id: "3",
+        contact_person_name: "Traffic Control Center",
+        contact_person_number: "103",
+        emergency_contact_type: "3",
+        contact_icon: t(492)
+    }]
+
+
+    t.exports = e(154).registerAsset({
+        __packager_asset: !0,
+        httpServerLocation: "/assets/src/imgs",
+        width: 64,
+        height: 64,
+        scales: [1],
+        hash: "596a7409a42f8c4f4889cc7b1640fcc7",
+        name: "controlroom",
+        type: "png"
+    })
+}, 490);
+__d(function(e, s, t, a) {
+    t.exports = s(154).registerAsset({
+        __packager_asset: !0,
+        httpServerLocation: "/assets/src/imgs",
+        width: 64,
+        height: 64,
+        scales: [1],
+        hash: "8d88071712422186c75fe17b01724bdb",
+        name: "policestation",
+        type: "png"
+    })
+}, 491);
+__d(function(e, s, t, a) {
+    t.exports = s(154).registerAsset({
+        __packager_asset: !0,
+        httpServerLocation: "/assets/src/imgs",
+        width: 64,
+        height: 64,
+        scales: [1],
+        hash: "2de143a9338de2850022ceb0451a4cec",
+        name: "trafficcontrol",
+        type: "png"
+    })
+
+
+
+    Object.defineProperty(i, "__esModule", {
+        value: !0
+    }), i.placesList = void 0, i.getAttractions = o;
+    a(12), i.placesList = [{
+        id: "1",
+        place_name: "Unakal Lake",
+        place_imageUrl: "https://www.nativeplanet.com/img/2015/08/25-1440495464-unkallakee.jpg",
+        place_imageUrl2: "http://image3.mouthshut.com/images/Restaurant/Photo/-92011_10198.jpg",
+        place_imageUrl3: "http://farm2.static.flickr.com/1360/1136702080_a2e39ca81a.jpg",
+        place_description: "Unkal lake is beautiful water spot in Hubli & is about 110 years old. This lake is spread across 200 acres of land. Centre of the lake is situated the statue of Swami Vivekananda which is the prime attraction of the lake. It has recreational facilities for children. You can enjoy a boat ride here. The Unkal lake , however, is large enough to accommodate all visitors as well as the hawkers. Hotel Naveen,the star attraction in Hubli is just beside this spot. It is the source of drinking water to a portion of Hubli"
+    }, {
+        id: "2",
+        place_name: "Shri Siddharoodha Swamy Math",
+        place_imageUrl: "https://trabol.s3.amazonaws.com/images/8922/dattatreyatemple1.jpg",
+        place_imageUrl2: "https://i.ytimg.com/vi/BaXfhtiIQ14/maxresdefault.jpg",
+        place_imageUrl3: "https://mw2.google.com/mw-panoramio/photos/medium/60769251.jpg",
+        place_description: "A truly and largely worshiped Swami Shri Siddharoodha. many people come here as devotees and everyone feels blessed. Can easily stay for 30 to 60 minutes and one should visit atleast once a week"
+    }, {
+        id: "3",
+        place_name: "Nrupatunga Betta",
+        place_imageUrl: "https://media-cdn.tripadvisor.com/media/photo-s/0b/22/d3/7d/nrupatunga-betta.jpg",
+        place_imageUrl2: "https://upload.wikimedia.org/wikipedia/commons/1/17/Pandavlene.jpg",
+        place_imageUrl3: "https://media-cdn.tripadvisor.com/media/photo-s/05/0e/20/a7/saptashrungi.jpg",
+        place_description: "Nrupatunga Betta is yet another famous tourist spot in Hubli. It is a small hill that has been developed into a beautiful picnic spot for the people of Hubli and Dharwad. It offers a great respite from the hustle and bustle of the city and serves as an ideal place to spend time with your near and dear ones in summers as well"
+    }, {
+        id: "4",
+        place_name: "Indira Gandhi Glass House",
+        place_imageUrl: "http://im.hunt.in/cg/hubli/City-Guide/Tourist_spots_in_Hubli.jpg",
+        place_imageUrl2: "http://c14996364.r60.cf2.rackcdn.com/destinations/glass-house-garden-7257/Glass-House-Garden-(4)_slider_main.jpg?1384978808",
+        place_imageUrl3: "http://image3.mouthshut.com/images/imagesp/925753476s.jpg",
+        place_description: "Indira Gandhi Glass House Garden is a public garden with recreational amenities maintained by city municipality. It houses a large glass building resembling a similar structure in Lalbagh of Bengaluru. \n Indira Glass House is renovated into more beautiful park. The entry fee of Rs.10/- for elders and Rs.5/- for children is collected. But when you go on walking all around,it feels its more worthy. There is a small train to get on and behold the park. The most beautiful thing to be watched is the musical fountain that is arranged every weekend (Saturday and Sunday) and on Governmental Holidays without any extra charge."
+    }, {
+        id: "5",
+        place_name: "Chandramouleshwara Temple",
+        place_imageUrl: "http://img1.holidayiq.com/images/attractions/Chandramouleshwara_Temple_Hubli_13193.jpg",
+        place_imageUrl2: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ravana_Phadi_cave_at_Aihole.jpg",
+        place_imageUrl3: "http://www.visittnt.com/blog/wp-content/uploads/2017/09/Badami-Cave-Temple.jpg",
+        place_description: "Chandramouleshwar is a 900-year-old temple from the Badami Chalukyan era.[1] It was built on the lines of Badami, Aihole and Pattadakal temples, is a Monument of National Importance, and is designated as a Protected Monument under the Ancient Monuments and Archaeological Sites (Act (1958)) by Archaeological Survey of India (ASI).\n There is an urgent need of conservation and restoration of the Chandramouleshwar temple at Unkal.[10][11]The temple premises serve as a playground for children and youngsters to play cricket. It has become a victim of government apathy and urbanization. There is virtually no approach road to and encroachments on all the four sides of the temple. The roads leading to the temple are very small with arrack shops and other illegal trades. One has to cross rows of houses and narrow lanes to reach Chandramauleshwar temple.Archaeological Survey of India (ASI) has begun work very long back, started work on a compound wall to prevent further encroachments, but the work is half done."
+    }]
+
+
+
+
+    o.etaStopDetailsList = [{
+        locName: "RTO- DH"
+    }, {
+        locName: "1ST GATE - 1"
+    }, {
+        locName: "1ST GATE - 2"
+    }, {
+        locName: "2ND GATE - 1"
+    }, {
+        locName: "2ND GATE - 2"
+    }, {
+        locName: "2ND GATE - 3"
+    }, {
+        locName: "ABHINAYA NAGAR - 1"
+    }, {
+        locName: "ABHINAYA NAGAR - 2"
+    }, {
+        locName: "ADDHYAPARK NAGAR - 1"
+    }, {
+        locName: "ADDHYAPARK NAGAR - 2"
+    }, {
+        locName: "AIRPORT - 1"
+    }, {
+        locName: "AIRPORT - 2"
+    }], o.routeDetails = [{
+        busNo: "100D-DKMC",
+        startplace: "DEPOT",
+        starttime: "12:00PM",
+        endplace: "KMC",
+        endtime: "03:00PM"
+    }, {
+        busNo: "100D-CBT",
+        startplace: "CBT",
+        starttime: "10:50AM",
+        endplace: "DEPOT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-CBT1D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "500D-HB",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "11D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-DKMC",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-CBT1D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "500D-HB",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "11D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-DKMC",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "500D-HB",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "11D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-DKMC",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-CBT1D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "500D-HB",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "11D",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }, {
+        busNo: "100D-DKMC",
+        startplace: "PATRAKARTH NAGAR",
+        starttime: "10:50AM",
+        endplace: "CBT",
+        endtime: "12:50PM"
+    }], o.busStopDetails = [{
+        busNo: "2341",
+        stopName: "HDMC- DH",
+        eta: "10:00AM",
+        etd: "10:05PM"
+    }, {
+        busNo: "2342",
+        stopName: "RTO- DH",
+        eta: "10:15AM",
+        etd: "10:20PM"
+    }, {
+        busNo: "2343",
+        stopName: "1ST GATE - 1",
+        eta: "10:30AM",
+        etd: "10:35PM"
+    }, {
+        busNo: "2344",
+        stopName: "1ST GATE - 2",
+        eta: "10:50AM",
+        etd: "10:55PM"
+    }, {
+        busNo: "2345",
+        stopName: "2ND GATE - 1",
+        eta: "11:05AM",
+        etd: "11:10PM"
+    }, {
+        busNo: "2346",
+        stopName: "2ND GATE - 2",
+        eta: "11:15AM",
+        etd: "11:20PM"
+    }, {
+        busNo: "2347",
+        stopName: "2ND GATE - 3",
+        eta: "11:30AM",
+        etd: "11:35PM"
+    }, {
+        busNo: "2348",
+        stopName: "ABHINAYA NAGAR - 1",
+        eta: "11:50AM",
+        etd: "11:55PM"
+    }, {
+        busNo: "2349",
+        stopName: "ABHINAYA NAGAR - 2",
+        eta: "12:05AM",
+        etd: "12:07PM"
+    }, {
+        busNo: "2366",
+        stopName: "ADDHYAPARK NAGAR - 1",
+        eta: "12:15AM",
+        etd: "12:18PM"
+    }, {
+        busNo: "2355",
+        stopName: "ADDHYAPARK NAGAR - 2",
+        eta: "12:30AM",
+        etd: "12:35PM"
+    }, {
+        busNo: "2333",
+        stopName: "AIRPORT - 1",
+        eta: "12:45AM",
+        etd: "12:47PM"
+    }], o.MonitoredVehicleJourney = {
+        ResponseTimestamp: "2017-12-05T13:18:12+05:30",
+        ValidUntil: "2017-12-05T13:20:12+05:30",
+        MonitoredStopVisit: [{
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "700-HD",
+                DirectionRef: "BSNL Building TO Jubilee Circle",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 3542",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- HD",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "500-HD",
+                DirectionRef: "BSNL Building TO Jubilee Circle",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 2453",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- HD",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "500-HD",
+                DirectionRef: "BSNL Building TO Jubilee Circle",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 1425",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- HD",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "500-HD",
+                DirectionRef: "BBSR TO CTC",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 3044",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- HD",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "600-HD",
+                DirectionRef: "BBSR TO CTC",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !1,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 2222",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- HD",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+        }, {
+            RecordedAtTime: "2017-12-05T13:18:12+05:30",
+            MonitoringRef: "11441",
+            MonitoredVehicleJourney: {
+                LineRef: "600-HD",
+                DirectionRef: "BBSRTO TO BPD",
+                VariantRef: "Normal",
+                TripImportCode: null,
+                PublishedLineName: "500",
+                OperatorRef: "CTB",
+                ProductCategoryRef: "",
+                ServiceFeatureRef: "",
+                OriginRef: "11021",
+                OriginName: "BSNL Building- HD",
+                DestinationRef: "11181",
+                DestinationName: "Jubilee Circle - HD",
+                Monitored: !0,
+                VehicleLocation: {
+                    Longitude: 75.12884366666667,
+                    Latitude: 15.356017333333334
+                },
+                Occupancy: "Seats Available",
+                ApproachingDistance: "0",
+                VehicleRef: "KA-25 1111",
+                MonitoredCall: {
+                    VisitNumber: "1",
+                    Order: "11",
+                    VehicleAtStop: !1,
+                    StopPointName: "Unkal Lake- HD",
+                    VehicleLocationV1DtoAtStop: {
+                        Longitude: 75.11158,
+                        Latitude: 15.38238
+                    },
+                    AimedArrivalTime: "2017-12-05T13:21:43+05:30",
+                    ExpectedArrivalTime: "2017-12-05T13:21:49+05:30",
+                    AimedDepartureTime: "2017-12-05T13:21:54+05:30",
+                    ExpectedDepartureTime: "2017-12-05T13:22:00+05:30"
+                }
+            }
+
+
+                        return e({
+                            type: a.FETCHING_DATA
+                        }), r.prev = 2, n = {
+                            grant_type: "password",
+                            username: "c3e27998-d5c2-11e7-8ddd-00ff561026b1"
+                        }, r.next = 6, u.awrap(c.default.post("token", n));
+
+
+
+
+    r.updatesList = [{
+        id: "1",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "2",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "3",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "4",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "5",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "6",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "7",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "8",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "9",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "10",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }, {
+        id: "11",
+        updateWarning: "Routes 13,22 and 23 travelling towards Mairangi are now using Stop H at Lambton Quay from Saturday 7 January 2017",
+        update: "From Saturday 7 January Routes 13,22 and 23 travelling towards Mairangi will now be using Stop H (5014 at Lambton Quay North)"
+    }]
+
+
+
+    n.plan = [{
+        0: [{
+            startName: "1ST GATE - 1",
+            endName: "ADDHYAPARK NAGAR - 1",
+            routeName: "BSNL Building to Jubilee Circle",
+            routeCode: "19U",
+            distance: "10",
+            mode: "Bus/Walk",
+            vehicleRef: "KA-25 3044",
+            duration: "30",
+            startPointEta: "2017-12-27T11:29:25+05:30",
+            startPointEtd: "2017-12-27T11:29:25+05:30",
+            endPointEta: "2017-12-27T11:29:25+05:30",
+            endPointEtd: "2017-12-27T11:29:25+05:30",
+            startPosition: {
+                stopLatitude: "15.34433",
+                stopLongitude: "75.145181"
+            },
+            endPosition: {
+                stopLatitude: "15.350513999353874",
+                stopLongitude: "75.13609886169434"
+            }
+        }, {
+            startName: "1ST GATE - 1",
+            endName: "ADDHYAPARK NAGAR - 1",
+            routeName: "BSNL Building to Jubilee Circle",
+            routeCode: "19U",
+            distance: "10",
+            mode: "Bus/Walk",
+            vehicleRef: "KA-25 3044",
+            duration: "30",
+            startPointEta: "2017-12-27T11:29:25+05:30",
+            startPointEtd: "2017-12-27T11:29:25+05:30",
+            endPointEta: "2017-12-27T11:29:25+05:30",
+            endPointEtd: "2017-12-27T11:29:25+05:30",
+            startPosition: {
+                stopLatitude: "15.34433",
+                stopLongitude: "75.145181"
+            },
+            endPosition: {
+                stopLatitude: "15.350513999353874",
+                stopLongitude: "75.13609886169434"
+            }
+        }]
+    }, {
+        0: [{
+            startName: "1ST GATE - 1",
+            endName: "ADDHYAPARK NAGAR - 1",
+            routeName: "BSNL Building to Jubilee Circle",
+            routeCode: "19U",
+            distance: "10",
+            mode: "Bus/Walk",
+            vehicleRef: "KA-25 3044",
+            duration: "30",
+            startPointEta: "2017-12-27T11:29:25+05:30",
+            startPointEtd: "2017-12-27T11:29:25+05:30",
+            endPointEta: "2017-12-27T11:29:25+05:30",
+            endPointEtd: "2017-12-27T11:29:25+05:30",
+            startPosition: {
+                stopLatitude: "15.34433",
+                stopLongitude: "75.145181"
+            },
+            endPosition: {
+                stopLatitude: "15.350513999353874",
+                stopLongitude: "75.13609886169434"
+            }
+        }, {
+            startName: "1ST GATE - 1",
+            endName: "ADDHYAPARK NAGAR - 1",
+            routeName: "BSNL Building to Jubilee Circle",
+            routeCode: "19U",
+            distance: "10",
+            mode: "Bus/Walk",
+            vehicleRef: "KA-25 3044",
+            duration: "30",
+            startPointEta: "2017-12-27T11:29:25+05:30",
+            startPointEtd: "2017-12-27T11:29:25+05:30",
+            endPointEta: "2017-12-27T11:29:25+05:30",
+            endPointEtd: "2017-12-27T11:29:25+05:30",
+            startPosition: {
+                stopLatitude: "15.34433",
+                stopLongitude: "75.145181"
+            },
+            endPosition: {
+                stopLatitude: "15.350513999353874",
+                stopLongitude: "75.13609886169434"
+            }
+
+
+
+    function f(r) {
+        var t = [{
+            from: "1ST GATE -1",
+            to: "CBT-1",
+            time: "10.30",
+            fare: "20"
+        }, {
+            from: "1ST GATE -2",
+            to: "AMBEDKARNAGAR -2",
+            time: "11.00",
+            fare: "30"
+        }, {
+            from: "ARTS COLLEGE - 1",
+            to: "AYYAPA SWAMY TEMPLE",
+            time: "11.45",
+            fare: "40"
+        }, {
+            from: "CBT-2",
+            to: "BANKAPUR CHOWK - 1",
+            time: "12.10",
+            fare: "20"
+        }, {
+            from: "BASAVESWAR CIRCLE -3",
+            to: "AIRPORT -1",
+            time: "02.30",
+            fare: "60"
+        }];
+        return t
+    }
+
+
+
+
+
+
+
+
+        _requiredBy: ["/"],
+        _resolved: "https://registry.npmjs.org/react-native/-/react-native-0.49.3.tgz",
+        _spec: "0.49.3",
+        _where: "/home/bipt012/Desktop/Hubli App/Hubli/Mobile/SourceCode/v1/Hubli",
+        bin: {
+            "react-native": "local-cli/wrong-react-native.js"
+        },
+        bugs: {
+            url: "https://github.com/facebook/react-native/issues"
+        },
+
+
+
+
+    a.exports = [{
+        routeNo: "19U",
+        startPlace: "PATRAKARTH NAGAR",
+        startTime: "10:50AM",
+        endPlace: "CBT",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "500D-BH",
+        startPlace: "BSNL Building",
+        startTime: "10:50AM",
+        endPlace: "Depot",
+        endtTime: "12:50PM"
+    }, {
+        routeNo: "500-HD",
+        startPlace: "BSNL Building",
+        startTime: "10:50AM",
+        endPlace: "Jubliee Building",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "100D-KMCD",
+        startPlace: "KMC",
+        startTime: "10:50AM",
+        endPlace: "Depot",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "100D-DCBT1",
+        startPlace: "Depot",
+        startTime: "10:50AM",
+        endPlace: "CBT",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "500-DH",
+        startPlace: "Jubliee Circle",
+        startTime: "10:50AM",
+        endPlace: "BSNL Building",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "19D",
+        startPlace: "CBT",
+        startTime: "10:50AM",
+        endPlace: "PATRAKARTH NAGAR",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "11U",
+        startPlace: "GABBUR",
+        startTime: "10:50AM",
+        endPlace: "KMC",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "100D-DKMC",
+        startPlace: "Depot",
+        startTime: "10:50AM",
+        endPlace: "KMC",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "100D-CBT1D",
+        startPlace: "CBT",
+        startTime: "10:50AM",
+        endPlace: "Depot",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "500-HB",
+        startPlace: "Depot",
+        startTime: "10:50AM",
+        endPlace: "BSNL Building",
+        endTime: "12:50PM"
+    }, {
+        routeNo: "11D",
+        startPlace: "KMC",
+        startTime: "10:50AM",
+        endPlace: "GABBUR",
+        endTime: "12:50PM"
+    }]
+
+
+
+
+                key: "renderData",
+                value: function() {
+                    return datas = [{
+                        name: "Home",
+                        route: "Dashboard",
+                        icon: t(1046),
+                        bg: "#C5F442"
+                    }, {
+                        name: "Time Table",
+                        route: "TimeTable",
+                        icon: t(1047),
+                        bg: "#C5F442"
+                    }, {
+                        name: "Arrival",
+                        route: "ETA",
+                        icon: t(1048),
+                        bg: "#C5F442"
+                    }, {
+                        name: "Departure",
+                        route: "ETD",
+                        icon: t(1049),
+                        bg: "#C5F442"
+                    }, {
+                        name: "Journey Planner",
+                        route: "JourneyPlanner",
+                        icon: t(1050),
+                        bg: "#477EEA",
+                        types: "8"
+                    }, {
+                        name: "Route Diagram",
+                        route: "RouteDiagram",
+                        icon: t(886)
+                    }, {
+                        name: "Stop Details",
+                        route: "StopDetails",
+                        icon: t(1051),
+                        bg: "#477EEA",
+                        types: "9"
+                    }, {
+                        name: "Fare Chart",
+                        route: "FareChart",
+                        icon: t(883),
+                        bg: "#DA4437",
+                        types: "4"
+                    }, {
+                        name: "Feedback",
+                        route: "FeedBack",
+                        icon: t(1052),
+                        bg: "#B89EF5",
+                        types: "5"
+                    }, {
+                        name: "Places of Attraction",
+                        route: "PlacesofAttraction",
+                        icon: t(1053)
+                    }, {
+                        name: "Contact",
+                        route: "Contact",
+                        icon: t(1054)
+                    }, {
+                        name: "SOS",
+                        route: "Sos",
+                        icon: t(1055),
+                        bg: "#3591FA",
+                        types: "2"
+                    }]
+                }
+            }, {
+                    switch (r.props.route.route) {
+                        case "Dashboard":
+                            c.Actions.Dashboard();
+                            break;
+                        case "TimeTable":
+                            c.Actions.TimeTable();
+                            break;
+                        case "ETA":
+                            c.Actions.StopSearchEta({
+                                title: "Arrival"
+                            });
+                            break;
+                        case "ETD":
+                            c.Actions.StopSearchEta({
+                                title: "Departure"
+                            });
+                            break;
+                        case "JourneyPlanner":
+                            c.Actions.JourneyPlanner();
+                            break;
+                        case "StopDetails":
+                            c.Actions.StopDetails();
+                            break;
+                        case "Contact":
+                            c.Actions.Contact();
+                            break;
+                        case "Updates":
+                            c.Actions.Updates();
+                            break;
+                        case "FareChart":
+                            c.Actions.FareChart();
+                            break;
+                        case "FeedBack":
+                            c.Actions.FeedBack();
+                            break;
+                        case "PlacesofAttraction":
+                            c.Actions.PlacesofAttraction();
+                            break;
+                        case "Sos":
+                            r.checkSosData();
+                            break;
+                        case "RouteDiagram":
+                            c.Actions.RouteDiagramComponent();
+                            break;
