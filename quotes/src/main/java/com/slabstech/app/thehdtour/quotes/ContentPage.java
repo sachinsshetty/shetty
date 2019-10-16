@@ -81,32 +81,5 @@ public class ContentPage extends Activity {
         return titleText ;
     }
 
-    /*
-    private void setAdditionalLayout() {
-
-        GridView gridView = findViewById(R.id.grid_view);
-
-        Boolean gridDisplay = false;
-
-        if(gridDisplay){
-            // Instance of ImageAdapter Class
-            gridView.setAdapter(new ImageAdapter(this));
-
-            gridView.setOnItemClickListener(new OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View v,
-                                        int position, long id) {
-
-                    // Sending image id to FullScreenActivity
-                    Intent i = new Intent(getApplicationContext(), FullImageActivity.class);
-                    // passing array index
-                    i.putExtra("id", position);
-                    startActivity(i);
-                }
-            });
-
-        }
-    }
-    */
 
 }

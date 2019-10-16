@@ -18,7 +18,6 @@
         <activity android:label="Places" android:name="com.slabstech.app.thehdtour.quotes.Places"/>
         <activity android:label="AudioPage" android:name="com.slabstech.app.thehdtour.quotes.ContentPage"/>
         <activity android:name="com.slabstech.app.thehdtour.quotes.Narration"/>
-        <activity android:name="com.slabstech.app.thehdtour.quotes.FullImageActivity"></activity>
         <activity android:name="com.slabstech.app.thehdtour.quotes.WebViewActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET" />

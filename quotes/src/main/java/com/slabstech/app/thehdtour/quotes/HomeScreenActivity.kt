@@ -28,15 +28,9 @@ class HomeScreenActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
         nav_view.setNavigationItemSelectedListener(this)
 
-        val bStart = findViewById(R.id.start) as Button
-
-        bStart.setOnClickListener {
-
-            val intent: Intent = Intent(this, Places::class.java)
-            intent.putExtra("pageType", "Experience")
-            startActivity(intent)
-        }
-
+        val intent: Intent = Intent(this, Narration::class.java)
+        intent.putExtra("pageType", "Partner")
+        startActivity(intent)
 
     }
 

@@ -15,7 +15,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
-public class Narration extends Activity {
+public class  Narration extends Activity {
 
 
     String val[] = null;
