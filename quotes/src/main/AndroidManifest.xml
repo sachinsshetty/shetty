@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.slabstech.app.thehdtour.quotes">
 
-    <application android:icon="@drawable/hdtour_logo">
+    <application android:icon="@drawable/icon_hdtour">
         <activity
                 android:name=".SplashScreen"
                 android:label="@string/app_name"
